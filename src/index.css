@@ -1,0 +1,110 @@
+/* Fonts: Satoshi @font-face declarations */
+@import "tailwindcss";
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Satoshi';
+  src: url('/fonts/Satoshi-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Color Palette Variables */
+:root {
+  --color-primary: #E43636;   /* Passion Red */
+  --color-secondary: #F9F6F3; /* Soft Ivory */
+  --color-accent: #3b82f6;    /* Optional: Vivid Blue or tweak to match */
+  --color-background: #F9F6F3;
+  --color-text: #111827;      /* Deep Charcoal for contrast */
+}
+
+
+/* Font classes using Satoshi */
+.satoshi-regular {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--color-text);
+}
+
+.satoshi-medium {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--color-text);
+}
+
+.satoshi-bold {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--color-text);
+}
+
+.satoshi-large {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: var(--color-text);
+}
+
+/* Example hover style for links */
+.link-accent {
+  color: var(--color-secondary);
+  transition: color 0.3s ease;
+}
+
+.link-accent:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+/* Background and other colors */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+.customShadow {
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+.text-heading-lg {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .text-heading-lg {
+    font-size: 3rem;
+  }
+}
