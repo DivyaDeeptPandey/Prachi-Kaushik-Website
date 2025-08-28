@@ -7,6 +7,10 @@ import JourneyPage from './pages/journeyPage'
 import ContributionPage from './pages/contributionPage'
 import ArchivePage from './pages/archivePage'
 import SupportPage from './pages/supportPage';
+import Blogs from './pages/Blogs';
+import VideoGallery from './pages/VideoGallery';
+import MediaCoverage from './pages/MediaCoverage';
+import StockImagesGallery from './pages/StockImagesGallery';
 
 const App = () => {
   return (
@@ -17,6 +21,10 @@ const App = () => {
         <Route path='/Her-contributions' element={<ContributionPage />} />
         <Route path='/Archive' element={<ArchivePage />} />
         <Route path='/support' element={<SupportPage />} />
+        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/video-gallery' element={<VideoGallery />} />
+        <Route path='/media-coverage' element={<MediaCoverage />} />
+        <Route path='/stock-images-gallery' element={<StockImagesGallery />} />
       </Routes>
     </div>
   )

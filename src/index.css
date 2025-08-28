@@ -84,7 +84,9 @@ body, html {
 .bg-secondary {
   background-color: var(--color-secondary);
 }
-
+.bg-blue{
+  background-color: var(--color-accent);
+}
 .text-primary {
   color: var(--color-primary);
 }
@@ -101,6 +103,15 @@ body, html {
 }
 .text-heading-lg {
   font-size: 2rem;
+}
+.border-primary {
+  border-color: var(--color-primary);
+}
+.border-secondary{
+  border-color: var(--color-secondary);
+}
+.group:hover .group-hover\:text-primary {
+  color: #E43636 !important;
 }
 
 @media (min-width: 768px) {
