@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Search, Filter, Download, ExternalLink, Grid, List, Image } from 'lucide-react';
-import NavBar from "../components/NavBar";
+import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const StockImagesGallery = () => {
