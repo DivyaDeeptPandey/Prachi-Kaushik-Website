@@ -4,7 +4,7 @@ import { X, ChevronLeft, ChevronRight, Award, Newspaper, Image, Video, Download,
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WallmartImg from '../assets/archivesWallmart.jpg';
-import InvitationImg from '../assets/archivesInvitation.jpg';
+import InvitationImg from '../assets/ArchivesInvitation.jpg';
 import Svavlambiimg from '../assets/ArchivesSvavlambi.jpg';
 const Archives = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
