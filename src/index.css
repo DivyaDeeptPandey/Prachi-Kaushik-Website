@@ -92,7 +92,7 @@ body, html {
 }
 
 .text-secondary {
-  color: var(--color-secondary);
+  color: var(--color-secondary) !important;
 }
 
 .text-accent {
