@@ -18,10 +18,9 @@ import nitiAayogLogo from '../../assets/logos/NITI_Aayog_logo.png';
 import rexLogo from '../../assets/logos/rex.png';
 import bricsLogo from '../../assets/logos/brics.png';
 import bwLogo from '../../assets/logos/bw.png';
-import socialEntrepreneurLogo from '../../assets/logos/social-entrepreneur.png';
 
 // Speaking Engagement Logos
-import tedxLogo from '../../assets/logos/tedx.png';
+import tedxLogo from '../../assets/logos/TEDx.png';
 import iitLogo from '../../assets/logos/logo-iit.png';
 
 const images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
