@@ -1,10 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 import frontPic from '../../assets/solo-pic.png';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  // Function to handle "Learn More" button click
+  const handleLearnMoreClick = () => {
+    navigate('/her-early-life');
+  };
+
+  // Function to handle "Contact" button click
+  const handleContactClick = () => {
+    // Scroll to the "Join Her Campaign" section
+    const joinCampaignSection = document.getElementById('join-campaign');
+    if (joinCampaignSection) {
+      joinCampaignSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
-    <section className="bg-secondary min-h-screen flex items-center justify-center py-12 md:py-16 lg:py-20">
+    <section className="bg-secondary min-h-screen flex items-center justify-center py-12 md:py-16 lg:py-20 px-4 md:px-8 lg:px-10">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center justify-center gap-8 md:gap-12 lg:gap-16 mt-13">
         
         {/* Left: Text Content */}
@@ -15,7 +32,10 @@ const HeroSection = () => {
           transition={{ duration: 0.8, ease: 'easeOut' }}
         >
           <motion.h1
-            className="satoshi-bold text-3xl sm:text-4xl md:text-4xl lg:text-5xl text-gray-900 leading-tight mb-4 drop-shadow-md"
+            className="satoshi-bold text-gray-900 leading-tight mb-4 drop-shadow-md"
+            style={{ 
+              fontSize: 'clamp(1.75rem, 5vw, 2.75rem)'
+            }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 0.1 }}
@@ -24,7 +44,10 @@ const HeroSection = () => {
           </motion.h1>
 
           <motion.h2
-            className="satoshi-medium text-xl sm:text-xl md:text-xl lg:text-2xl text-gray-700 mb-4"
+            className="satoshi-medium text-gray-700 mb-4"
+            style={{ 
+              fontSize: 'clamp(1rem, 3vw, 1.75rem)'
+            }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 0.3 }}
@@ -33,7 +56,10 @@ const HeroSection = () => {
           </motion.h2>
 
           <motion.p
-            className="satoshi-regular text-base md:text-base lg:text-lg text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0"
+            className="satoshi-regular text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0"
+            style={{ 
+              fontSize: 'clamp(0.9rem, 2vw, 1.05rem)'
+            }}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
@@ -48,7 +74,11 @@ const HeroSection = () => {
             transition={{ duration: 1, ease: 'easeOut', delay: 0.7 }}
           >
             <motion.button
+              onClick={handleLearnMoreClick}
               className="bg-primary text-secondary satoshi-medium py-3 px-8 rounded-lg transition-colors duration-300 hover:bg-primary-dark flex-1 text-center"
+              style={{ 
+                fontSize: 'clamp(0.9rem, 1.5vw, 1rem)'
+              }}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -56,7 +86,11 @@ const HeroSection = () => {
             </motion.button>
 
             <motion.button
+              onClick={handleContactClick}
               className="border-2 border-primary text-primary satoshi-medium py-3 px-8 rounded-lg transition-colors duration-300 hover:bg-primary hover:text-secondary flex-1 text-center"
+              style={{ 
+                fontSize: 'clamp(0.9rem, 1.5vw, 1rem)'
+              }}
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -72,25 +106,57 @@ const HeroSection = () => {
             transition={{ duration: 1, delay: 0.9 }}
           >
             <div className="text-center md:text-left">
-              <p className="satoshi-bold text-3xl md:text-3xl">2.5M+</p>
-              <p className="satoshi-regular text-gray-600 mt-1">Women Educated</p>
+              <p 
+                className="satoshi-bold text-gray-900"
+                style={{ 
+                  fontSize: 'clamp(1.5rem, 1.55vw, 2rem)'
+                }}
+              >
+                2.5M+
+              </p>
+              <p 
+                className="satoshi-regular text-gray-600 mt-1"
+                style={{ 
+                  fontSize: 'clamp(0.8rem, 1.5vw, 1rem)'
+                }}
+              >
+                Women Educated
+              </p>
             </div>
             <div className="text-center md:text-left">
-              <p className="satoshi-bold text-3xl md:text-3xl">10K+</p>
-              <p className="satoshi-regular text-gray-600 mt-1">Entrepreneurs Created</p>
+              <p 
+                className="satoshi-bold text-gray-900"
+                style={{ 
+                  fontSize: 'clamp(1.5rem, 1.55vw, 2rem)'
+                }}
+              >
+                10K+
+              </p>
+              <p 
+                className="satoshi-regular text-gray-600 mt-1"
+                style={{ 
+                  fontSize: 'clamp(0.8rem, 1.5vw, 1rem)'
+                }}
+              >
+                Entrepreneurs Created
+              </p>
             </div>
           </motion.div>
         </motion.div>
 
         {/* Right: Image */}
         <motion.div
-          className="w-full md:w-1/2 flex justify-center items-center "
+          className="w-full md:w-1/2 flex justify-center items-center"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
         >
           <motion.div
-            className="w-72 h-96 md:w-80 md:h-112 lg:w-96 lg:h-140 rounded-lg overflow-hidden shadow-xl"
+            className="rounded-lg overflow-hidden shadow-xl"
+            style={{
+              width: 'clamp(18rem, 40vw, 24rem)',
+              height: 'clamp(24rem, 60vw, 35rem)'
+            }}
             whileHover={{ y: -5 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >

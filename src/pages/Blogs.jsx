@@ -8,7 +8,6 @@ const BlogShowcase = () => {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
 
-  // Sample blog data - replace with actual blog posts
   const blogPosts = [
     {
       id: 1,
@@ -260,7 +259,7 @@ const BlogShowcase = () => {
                       </span>
                       
                       {/* Arrow icon */}
-                      <ArrowRight className="w-4 h-4 transform group-hover/button:translate-x-1 transition-transform duration-300 relative z-10" />
+                      <ArrowRight className="w-4 h-4 transform group-hover/button:text-white transition-transform duration-300 relative z-10" />
                     </a>
                   </div>
                 </div>

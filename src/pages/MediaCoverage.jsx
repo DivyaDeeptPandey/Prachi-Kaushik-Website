@@ -52,26 +52,6 @@ const MediaCoverage = () => {
         },
         {
             id: 5,
-            title: "Vyomini Social Enterprise Empowers 1000+ Underserved Individuals with Skill Development",
-            excerpt: "News about Vyomini's extensive skill development program creating opportunities for underserved communities.",
-            date: "2024-02-15",
-            publisher: "India CSR",
-            url: "https://indiacsr.in/vyomini-social-enterprise-empowers-1000-underserved-individuals-with-skill-development-program/",
-            readTime: "5 min read",
-            highlights: ["Skill Development", "Empowerment", "CSR"]
-        },
-        {
-            id: 6,
-            title: "Vyomini Launches Swabhimaan Skill Program to Empower Underprivileged Communities",
-            excerpt: "Coverage of the launch of Swabhimaan program focused on skill development for underprivileged communities.",
-            date: "2024-01-20",
-            publisher: "Higher Education Plus",
-            url: "http://highereducationplus.com/vyomini-launches-swabhimaan-skill-program-to-empower-underprivileged-communities/",
-            readTime: "6 min read",
-            highlights: ["Swabhimaan", "Skill Program", "Underprivileged"]
-        },
-        {
-            id: 7,
             title: "Ending Period Stigma and Empowering Millions: Prachi Kaushik's Journey",
             excerpt: "Comprehensive feature on Prachi's journey to eliminate menstrual stigma and empower women across India.",
             date: "2023-12-10",
@@ -81,7 +61,7 @@ const MediaCoverage = () => {
             highlights: ["Journey", "Stigma Elimination", "Women Empowerment"]
         },
         {
-            id: 8,
+            id: 6,
             title: "Social Entrepreneur Prachi Kaushik on Menstrual Health and Women Empowerment",
             excerpt: "In-depth interview with Prachi Kaushik discussing her work in menstrual health and broader women empowerment initiatives.",
             date: "2022-10-15",
@@ -91,17 +71,7 @@ const MediaCoverage = () => {
             highlights: ["Interview", "Social Entrepreneurship", "Impact"]
         },
         {
-            id: 9,
-            title: "Vyomini Inaugurates Skill Training Center to Empower Young Girls in Uttar Pradesh",
-            excerpt: "News about the establishment of a skill training center focused on empowering young girls in Uttar Pradesh.",
-            date: "2024-01-30",
-            publisher: "Economic Times Education",
-            url: "https://education.economictimes.indiatimes.com/news/skills/vyomini-social-enterprise-inaugurates-skill-training-center-to-empower-young-girls-in-uttar-pradesh/118349937",
-            readTime: "4 min read",
-            highlights: ["Uttar Pradesh", "Skill Center", "Young Girls"]
-        },
-        {
-            id: 10,
+            id: 7,
             title: "Vyomini Distributes Hygiene Kits to 1000 Women, Strengthening Health and Dignity",
             excerpt: "Coverage of Vyomini's initiative to distribute hygiene kits to 1000 women, promoting health and dignity.",
             date: "2024-02-28",
@@ -111,7 +81,7 @@ const MediaCoverage = () => {
             highlights: ["Hygiene Kits", "Health", "Dignity"]
         },
         {
-            id: 11,
+            id: 8,
             title: "How Can Women Enter Male-Dominated Jobs in 2025",
             excerpt: "Insightful article featuring Prachi's perspectives on breaking gender barriers in traditionally male-dominated fields.",
             date: "2024-03-05",
@@ -121,7 +91,7 @@ const MediaCoverage = () => {
             highlights: ["Gender Equality", "Employment", "2025 Trends"]
         },
         {
-            id: 12,
+            id: 9,
             title: "Project Swabhimaan: Empowering Women in Unorganized Sector on Menstrual Hygiene Day",
             excerpt: "Coverage of Project Swabhimaan launch aimed at empowering women working in the unorganized sector.",
             date: "2024-05-28",
@@ -131,7 +101,7 @@ const MediaCoverage = () => {
             highlights: ["Project Swabhimaan", "Unorganized Sector", "Menstrual Hygiene Day"]
         },
         {
-            id: 13,
+            id: 10,
             title: "Women Supporting Women: The Importance of Female-Led Enterprises",
             excerpt: "Feature article discussing the significance of female-led enterprises with insights from Prachi Kaushik.",
             date: "2024-03-10",
@@ -141,7 +111,7 @@ const MediaCoverage = () => {
             highlights: ["Female Leadership", "Enterprise", "Women Support"]
         },
         {
-            id: 14,
+            id: 11,
             title: "Prachi Kaushik Receives Social Women Entrepreneur Award",
             excerpt: "News coverage of Prachi receiving the Social Women Entrepreneur Award for her work in menstrual hygiene management.",
             date: "2023-11-20",
@@ -151,7 +121,7 @@ const MediaCoverage = () => {
             highlights: ["Award", "Recognition", "Achievement"]
         },
         {
-            id: 15,
+            id: 12,
             title: "Resources and Training Opportunities for Women Entrepreneurs in Social Enterprises",
             excerpt: "Comprehensive guide featuring Vyomini's programs and resources for women entrepreneurs in social enterprises.",
             date: "2024-01-15",
@@ -161,27 +131,7 @@ const MediaCoverage = () => {
             highlights: ["Resources", "Training", "Entrepreneurship"]
         },
         {
-            id: 16,
-            title: "Vyomini Social Enterprise and Hero Motocorp Join Forces to Enhance Menstrual Health Awareness",
-            excerpt: "Coverage of the collaboration between Vyomini and Hero Motocorp to promote menstrual health awareness among female workers.",
-            date: "2024-04-15",
-            publisher: "Drug Today",
-            url: "https://www.drugtodayonline.com/medical-news/news-topic/18529-vyomini-social-enterprise-and-hero-motocorp-join-forces-to-enhance-menstrual-health-awareness",
-            readTime: "5 min read",
-            highlights: ["Collaboration", "Hero Motocorp", "Workplace Health"]
-        },
-        {
-            id: 17,
-            title: "Unorganized Sector Women Educated About Menstrual Hygiene",
-            excerpt: "Report on Vyomini's initiative to educate women in the unorganized sector about menstrual hygiene practices.",
-            date: "2024-05-30",
-            publisher: "Healthcare Radius",
-            url: "https://www.healthcareradius.in/events/unorganized-sector-women-educated-about-menstrual-hygiene",
-            readTime: "4 min read",
-            highlights: ["Education", "Unorganized Sector", "Awareness"]
-        },
-        {
-            id: 18,
+            id: 13,
             title: "Prachi Kaushik on Menstrual Hygiene Day",
             excerpt: "Interview with Prachi Kaushik discussing the importance of Menstrual Hygiene Day and ongoing initiatives.",
             date: "2024-05-28",
@@ -191,7 +141,7 @@ const MediaCoverage = () => {
             highlights: ["Interview", "Menstrual Hygiene Day", "Awareness"]
         },
         {
-            id: 19,
+            id: 14,
             title: "Women Show the Way in Menstrual Hygiene and Entrepreneurship",
             excerpt: "Feature on women entrepreneurs making strides in menstrual hygiene products and services.",
             date: "2024-04-20",
@@ -201,7 +151,7 @@ const MediaCoverage = () => {
             highlights: ["Entrepreneurship", "Success Stories", "Community Impact"]
         },
         {
-            id: 20,
+            id: 15,
             title: "Your Hygiene Regime Can Impact Your Periods",
             excerpt: "Educational article on how hygiene practices affect menstrual health, featuring insights from Prachi Kaushik.",
             date: "2024-03-25",
@@ -211,17 +161,7 @@ const MediaCoverage = () => {
             highlights: ["Health Education", "Hygiene Practices", "Women's Health"]
         },
         {
-            id: 21,
-            title: "Celebrating Menstruation and Puberty: A Guide to Menstrual Hygiene",
-            excerpt: "Comprehensive guide to menstrual hygiene and puberty education, featuring Vyomini's initiatives.",
-            date: "2024-02-10",
-            publisher: "Healthwire",
-            url: "https://healthwire.co/latest-news/celebrating-menstruation-and-puberty-a-guide-to-menstrual-hygiene-by-bridging-the-knowledge-gap/",
-            readTime: "8 min read",
-            highlights: ["Education", "Puberty", "Comprehensive Guide"]
-        },
-        {
-            id: 22,
+            id: 16,
             title: "Prachi Kaushik is Fostering Economic Sustainability",
             excerpt: "Feature on Prachi Kaushik's work in creating sustainable economic opportunities through social entrepreneurship.",
             date: "2024-01-25",
@@ -230,28 +170,9 @@ const MediaCoverage = () => {
             readTime: "6 min read",
             highlights: ["Economic Sustainability", "Social Entrepreneurship", "Impact"]
         },
+
         {
-            id: 23,
-            title: "Vyomini Conducts Workshop on Menstrual Health for Female Workers at Hero Motocorp",
-            excerpt: "Coverage of Vyomini's workshop series on menstrual health for female employees at Hero Motocorp.",
-            date: "2024-04-10",
-            publisher: "Media Express 24",
-            url: "https://mediaexpress24.com/business/vyomini-social-enterprise-conducts-workshop-on-menstrual-health-and-hygiene-for-female-workers-at-hero-motocorp/",
-            readTime: "4 min read",
-            highlights: ["Workshop", "Corporate Partnership", "Workplace Wellness"]
-        },
-        {
-            id: 24,
-            title: "Resources and Training Opportunities for Women Entrepreneurs",
-            excerpt: "Detailed overview of resources available for women entrepreneurs in social enterprises.",
-            date: "2024-01-18",
-            publisher: "Startup Talky",
-            url: "https://startuptalky.com/resources-training-opportunities-women-entrepreneurs-in-social-enterprises/",
-            readTime: "7 min read",
-            highlights: ["Resources", "Entrepreneurship", "Training"]
-        },
-        {
-            id: 25,
+            id: 17,
             title: "The Glitz Super Woman: Prachi Kaushik, Founder & Director of Vyomini Social Enterprise",
             excerpt: "Profile feature on Prachi Kaushik as a recognized super woman in social entrepreneurship.",
             date: "2024-03-15",
@@ -261,7 +182,7 @@ const MediaCoverage = () => {
             highlights: ["Profile", "Recognition", "Women Leadership"]
         },
         {
-            id: 26,
+            id: 18,
             title: "Abhaya Bravery Awards 2025 Honours Courageous Individuals",
             excerpt: "Coverage of the Abhaya Bravery Awards where Prachi Kaushik was honored for her courageous work in social entrepreneurship.",
             date: "2025-03-08",

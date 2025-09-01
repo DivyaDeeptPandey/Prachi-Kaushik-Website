@@ -22,9 +22,9 @@ const HomePage = () => {
       <WatchTheJourney />
       <ImpactSection />
       <AwardsSection/>
-      {/* <SeeMore /> */}
+  
       <Media />
-      <HerOrg />
+  
       <Support />
       <Footer />
     </div>
