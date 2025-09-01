@@ -17,7 +17,7 @@ import pic8 from '../../assets/scroll-pic8.jpg';
 import nitiAayogLogo from '../../assets/logos/NITI_Aayog_logo.png';
 import rexLogo from '../../assets/logos/rex.png';
 import bricsLogo from '../../assets/logos/brics.png';
-import bwLogo from '../../assets/logos/bw.png';
+import bwLogo from '../../assets/logos/Bw.png';
 
 // Speaking Engagement Logos
 import tedxLogo from '../../assets/logos/TEDx.png';
