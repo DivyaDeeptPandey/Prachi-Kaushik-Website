@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   const socialLinks = [
     { name: "Facebook", link: "https://www.facebook.com/share/16K9WftzER/", icon: <FaFacebookF /> },
-    { name: "X", link: "https://x.com/Ms_PrachiK/status/1962394858427236769?t=ikQ_FHHVVCmySQ72_Zm2YQ&s=09", icon: <FaTwitter /> },
+    { name: "X", link: "https://x.com/Ms_PrachiK", icon: <FaTwitter /> },
     { name: "Instagram", link: "https://www.instagram.com/karmayoginiprachi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", icon: <FaInstagram /> },
     { name: "LinkedIn", link: "https://www.linkedin.com/in/prachikarmayogini", icon: <FaLinkedinIn /> },
   ];

@@ -3,6 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { ArrowRight, ExternalLink } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 import media1 from '../../assets/media1.png';
 import media2 from '../../assets/media2.png';
@@ -153,15 +154,20 @@ const Media = () => {
         </div>
 
         {/* View More Button */}
-        <div className="text-center mt-10 md:mt-12">
+        <motion.div 
+          className="text-center mt-6 md:mt-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
           <a
-            href="/media-archive"
-            className="inline-flex items-center gap-2 satoshi-bold bg-primary text-secondary px-6 md:px-8 py-3 rounded-full hover:bg-red-600 transition-all duration-300 group shadow-md hover:shadow-lg text-base md:text-lg"
+            href="/media-coverage"
+            className="inline-flex items-center gap-2 satoshi-bold bg-primary text-secondary px-5 md:px-6 py-2 md:py-3 rounded-full hover:bg-red-600 transition-all duration-300 group text-sm md:text-base shadow-md hover:shadow-lg"
           >
             View All Media Features
-            <ArrowRight size={18} className="transform group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transform group-hover:translate-x-1 transition-transform" />
           </a>
-        </div>
+        </motion.div>
       </div>
 
       <style jsx>{`
