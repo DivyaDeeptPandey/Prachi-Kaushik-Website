@@ -162,7 +162,7 @@ const Media = () => {
         >
           <a
             href="/media-coverage"
-            className="inline-flex items-center gap-2 satoshi-bold bg-primary text-secondary px-5 md:px-6 py-2 md:py-3 rounded-full hover:bg-red-600 transition-all duration-300 group text-sm md:text-base shadow-md hover:shadow-lg"
+            className="inline-flex items-center gap-2 satoshi-bold bg-primary text-secondary px-5 md:px-6 py-2 md:py-3 rounded-full hover:bg-red-600 transition-all duration-300 group text-sm md:text-base shadow-md hover:shadow-lg mt-5"
           >
             View All Media Features
             <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transform group-hover:translate-x-1 transition-transform" />
