@@ -190,11 +190,183 @@ const MediaCoverage = () => {
             url: "https://newskarnataka.com/karnataka/bengaluru/abhaya-bravery-awards-2025-honours-courageous-individuals-and-promotes-a-rape-free-india-movement/08032025/",
             readTime: "5 min read",
             highlights: ["Award", "Recognition", "Bravery"]
+        },
+        {
+            id: 22,
+            title: "Menstrual Health Experience Matters in Every System",
+            excerpt: "Insightful article highlighting why menstrual health matters across all systems and policies.",
+            date: "2024-02-15",
+            publisher: "CX Quest",
+            url: "https://cxquest.com/menstrual-health-experience-matters-in-every-system/",
+            readTime: "6 min read",
+            highlights: ["MHM", "Health", "Policy"]
+        },
+        {
+            id: 23,
+            title: "How Far Has India Come in Ensuring Menstrual Hygiene?",
+            excerpt: "Hindustan Times deep dive on the progress and challenges of menstrual hygiene in India.",
+            date: "2024-04-22",
+            publisher: "Hindustan Times",
+            url: "https://www.hindustantimes.com/ht-insight/public-health/how-far-has-india-come-in-ensuring-menstrual-hygiene-101756618648410.html",
+            readTime: "8 min read",
+            highlights: ["MHM", "India", "Public Health"]
+        },
+        {
+            id: 24,
+            title: "Breaking the Cloth Barrier: Encouraging Safe Menstrual Practices in Rural India",
+            excerpt: "Hindustan Times (Telugu) story on promoting safe menstrual practices in rural regions.",
+            date: "2024-05-12",
+            publisher: "Hindustan Times Telugu",
+            url: "https://telugu.hindustantimes.com/lifestyle/breaking-the-cloth-barrier-encouraging-safe-menstrual-practices-in-rural-india-121748433649425.html",
+            readTime: "7 min read",
+            highlights: ["MHM", "Rural Health", "Awareness"]
+        },
+        {
+            id: 25,
+            title: "Prachi Kaushik: Vyomini and Menstrual Health",
+            excerpt: "Exclusive interview with Prachi Kaushik on her work in menstrual health and Vyomini’s mission.",
+            date: "2024-03-18",
+            publisher: "SheThePeople",
+            url: "https://www.shethepeople.tv/interviews/prachi-kaushik-vyomini-menstrual-health-2472939",
+            readTime: "6 min read",
+            highlights: ["MHM", "Interview", "Women Empowerment"]
+        },
+        {
+            id: 26,
+            title: "Prachi Kaushik: Ending Period Stigma and Empowering Millions",
+            excerpt: "Her Zindagi feature on breaking menstrual stigma and empowering women through education.",
+            date: "2024-03-25",
+            publisher: "Her Zindagi",
+            url: "https://www.herzindagi.com/inspiration/prachi-kaushik-ending-period-stigma-and-empowering-millions-article-274504",
+            readTime: "6 min read",
+            highlights: ["MHM", "Stigma", "Women Empowerment"]
+        },
+        {
+            id: 27,
+            title: "Prachi Kaushik on Menstrual Hygiene Day",
+            excerpt: "SheThePeople Hindi interview on menstrual hygiene awareness and challenges.",
+            date: "2024-05-28",
+            publisher: "SheThePeople Hindi",
+            url: "https://hindi.shethepeople.tv/interview/prachi-kaushik-on-menstrual-hygiene-day-4650847",
+            readTime: "5 min read",
+            highlights: ["MHM", "Awareness", "Interview"]
+        },
+        {
+            id: 28,
+            title: "Chinna Golconda Women Show the Way in Menstrual Hygiene and Entrepreneurship",
+            excerpt: "Deccan Chronicle highlights women leading menstrual health and entrepreneurship initiatives.",
+            date: "2024-06-02",
+            publisher: "Deccan Chronicle",
+            url: "https://www.deccanchronicle.com/news/chinna-golconda-women-show-the-way-in-menstrual-hygiene-and-entrepreneurship-896033",
+            readTime: "7 min read",
+            highlights: ["MHM", "Entrepreneurship", "Health"]
+        },
+        {
+            id: 29,
+            title: "Your Hygiene Regime Can Impact Your Periods",
+            excerpt: "The Daily Guardian explores how personal hygiene practices affect menstrual health.",
+            date: "2024-04-05",
+            publisher: "The Daily Guardian",
+            url: "https://thedailyguardian.com/your-hygiene-regime-can-impact-your-periods/",
+            readTime: "5 min read",
+            highlights: ["MHM", "Health", "Awareness"]
+        },
+        {
+            id: 30,
+            title: "Celebrating Menstruation and Puberty: A Guide to Menstrual Hygiene",
+            excerpt: "HealthWire feature bridging knowledge gaps in menstrual health and puberty education.",
+            date: "2024-04-12",
+            publisher: "HealthWire",
+            url: "https://healthwire.co/latest-news/celebrating-menstruation-and-puberty-a-guide-to-menstrual-hygiene-by-bridging-the-knowledge-gap/",
+            readTime: "6 min read",
+            highlights: ["MHM", "Education", "Awareness"]
+        },
+
+        // --- Media Coverage articles ---
+        {
+            id: 31,
+            title: "Prachi Kaushik Champions Rural Empowerment at IIT Delhi’s BioEnviroCon 2025",
+            excerpt: "Coverage of Prachi Kaushik’s impactful participation at IIT Delhi’s BioEnviroCon 2025.",
+            date: "2025-02-20",
+            publisher: "India Education Diary",
+            url: "https://indiaeducationdiary.in/prachi-kaushik-enlightens-panel-on-rural-development-and-community-outreach-at-iit-delhis-bioenvirocon-2025/",
+            readTime: "6 min read",
+            highlights: ["Media Coverage", "Rural Development", "IIT Delhi"]
+        },
+        {
+            id: 32,
+            title: "Prachi Kaushik Champions Rural Empowerment at IIT Delhi’s BioEnviroCon 2025",
+            excerpt: "Pni News coverage of Prachi Kaushik’s rural empowerment initiatives at IIT Delhi.",
+            date: "2025-02-22",
+            publisher: "Pni News",
+            url: "https://www.pninews.com/prachi-kaushik-champions-rural-empowerment-at-iit-delhis-bioenvirocon-2025/",
+            readTime: "6 min read",
+            highlights: ["Media Coverage", "Rural Empowerment", "IIT Delhi"]
+        },
+        {
+            id: 33,
+            title: "Prada Sandal Scandal Lays Bare India’s Small Player Labour Woes",
+            excerpt: "Business World analysis on labour challenges with mention of grassroots enterprises.",
+            date: "2024-07-12",
+            publisher: "Business World",
+            url: "https://www.businessworld.in/article/prada-sandal-scandal-lays-bare-indias-small-player-labour-woes-564090",
+            readTime: "7 min read",
+            highlights: ["Media Coverage", "Labour Issues", "Business"]
+        },
+        {
+            id: 34,
+            title: "Top 5 Women-Founded Startups Empowering the E-commerce Landscape",
+            excerpt: "Silicon India highlights women-founded startups making waves, including Vyomini.",
+            date: "2024-08-05",
+            publisher: "Silicon India",
+            url: "https://www.siliconindia.com/news/startups/top-5-womenfounded-established-startups-largely-empowering-ecommerce-landscape-nid-235721-cid-19.html",
+            readTime: "7 min read",
+            highlights: ["Media Coverage", "Startups", "E-commerce"]
+        },
+        {
+            id: 35,
+            title: "Prachi Kaushik Champions Rural Empowerment at IIT Delhi’s BioEnviroCon 2025",
+            excerpt: "Business News This Week feature on community empowerment at IIT Delhi’s BioEnviroCon.",
+            date: "2025-02-24",
+            publisher: "Business News This Week",
+            url: "https://businessnewsthisweek.com/news/prachi-kaushik-champions-rural-empowerment-at-iit-delhis-bioenvirocon-2025/",
+            readTime: "6 min read",
+            highlights: ["Media Coverage", "Community", "IIT Delhi"]
+        },
+        {
+            id: 36,
+            title: "Prachi Kaushik Champions Rural Empowerment at IIT Delhi’s BioEnviroCon 2025",
+            excerpt: "National Biz News story on rural empowerment initiatives by Prachi Kaushik.",
+            date: "2025-02-25",
+            publisher: "National Biz News",
+            url: "https://nationalbiznews.com/news/prachi-kaushik-champions-rural-empowerment-at-iit-delhis-bioenvirocon-2025/",
+            readTime: "6 min read",
+            highlights: ["Media Coverage", "Rural Development", "IIT Delhi"]
+        },
+        {
+            id: 37,
+            title: "Prachi Kaushik Champions Rural Empowerment at IIT Delhi’s BioEnviroCon 2025",
+            excerpt: "Business News For Profit coverage of BioEnviroCon 2025 and Prachi Kaushik’s contributions.",
+            date: "2025-02-26",
+            publisher: "Business News For Profit",
+            url: "https://businessnewsforprofit.com/news/prachi-kaushik-champions-rural-empowerment-at-iit-delhis-bioenvirocon-2025/",
+            readTime: "6 min read",
+            highlights: ["Media Coverage", "Empowerment", "IIT Delhi"]
+        },
+        {
+            id: 38,
+            title: "Prachi Kaushik: Super Woman Awardee",
+            excerpt: "The Glitz recognizes Prachi Kaushik as a Super Woman for her entrepreneurial and social impact.",
+            date: "2025-03-01",
+            publisher: "The Glitz Media",
+            url: "https://theglitz.media/theglitz-super-woman-prachi-kaushik-founder-director-vyomini-social-enterprise/",
+            readTime: "5 min read",
+            highlights: ["Media Coverage", "Recognition", "Women Leadership"]
         }
-    ];
+    ]
 
     // Extract unique years from articles
-    const years = ["all", ...new Set(mediaArticles.map(article => 
+    const years = ["all", ...new Set(mediaArticles.map(article =>
         new Date(article.date).getFullYear().toString()
     ))].sort((a, b) => b - a);
 
@@ -233,7 +405,7 @@ const MediaCoverage = () => {
     return (
         <div className="bg-secondary min-h-screen pt-20 pb-16">
             <Navbar />
-            
+
             {/* Header Section */}
             <section className="max-w-6xl mx-auto px-6 md:px-12 py-12">
                 <motion.div
@@ -322,8 +494,8 @@ const MediaCoverage = () => {
                                     key={year}
                                     onClick={() => setActiveYear(year)}
                                     className={`flex items-center gap-2 px-4 py-2 satoshi-medium rounded-full transition-colors ${activeYear === year
-                                            ? "bg-primary text-secondary"
-                                            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                                        ? "bg-primary text-secondary"
+                                        : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                                         }`}
                                 >
                                     <Calendar className="w-4 h-4" />
@@ -346,7 +518,7 @@ const MediaCoverage = () => {
                             <h3 className="satoshi-bold text-xl text-primary mb-4">Articles by Year</h3>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                                 {years.filter(year => year !== "all").map(year => {
-                                    const count = mediaArticles.filter(article => 
+                                    const count = mediaArticles.filter(article =>
                                         new Date(article.date).getFullYear().toString() === year
                                     ).length;
                                     return (

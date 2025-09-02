@@ -29,7 +29,7 @@ const Navbar = () => {
     },
     { 
       name: 'Contributions', 
-      href: '/her-contributions',
+      href: '/contributions',
       submenu: [
         { name: 'Social Enterprise', href: '/social-enterprise' },
         { name: 'Women Empowerment', href: '/women-empowerment' },
@@ -236,7 +236,7 @@ const Navbar = () => {
                           <a
                             key={subItem.name}
                             href={subItem.href}
-                            className={`block px-5 py-3 rounded-lg text-base transition-all duration-300 satoshi-medium relative ${
+                            className={`block px-5 py-3 rounded-lg text-secondary transition-all duration-300 satoshi-medium relative ${
                               isSubActive 
                                 ? 'text-secondary bg-primary/80' 
                                 : 'text-secondary/90 hover:text-secondary hover:bg-primary/80'

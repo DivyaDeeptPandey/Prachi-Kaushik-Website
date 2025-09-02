@@ -205,19 +205,6 @@ const ImpactSection = () => {
                   className="w-full h-64 md:h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                
-                {/* Stats Badges */}
-                <div className="absolute top-4 left-4 flex flex-wrap gap-2">
-                  {item.stats.map((stat, i) => (
-                    <span 
-                      key={i} 
-                      className="bg-white/90 text-primary satoshi-medium rounded-full px-3 py-1"
-                      style={{ fontSize: 'clamp(0.6rem, 1.5vw, 0.75rem)' }}
-                    >
-                      {stat}
-                    </span>
-                  ))}
-                </div>
               </div>
               
               {/* Content Section */}
@@ -233,6 +220,19 @@ const ImpactSection = () => {
                     {item.title}
                     <span className="absolute bottom-0 left-0 w-full h-1 bg-accent/40 -mb-1"></span>
                   </h2>
+                </div>
+                
+                {/* Stats moved here - under the title */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {item.stats.map((stat, i) => (
+                    <span 
+                      key={i} 
+                      className="bg-primary/10 text-primary satoshi-medium rounded-full px-3 py-1"
+                      style={{ fontSize: 'clamp(0.6rem, 1.5vw, 0.75rem)' }}
+                    >
+                      {stat}
+                    </span>
+                  ))}
                 </div>
                 
                 <p 

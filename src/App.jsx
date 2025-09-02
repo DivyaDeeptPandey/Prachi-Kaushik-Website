@@ -4,7 +4,6 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import HomePage from './pages/homePage'
 import JourneyPage from './pages/journeyPage'
-import ContributionPage from './pages/contributionPage'
 import ArchivePage from './pages/Archives'
 import SupportPage from './pages/supportPage';
 import Blogs from './pages/Blogs';
@@ -16,7 +15,7 @@ import HerAchievements from './pages/HerAchievements';
 import SocialEnterprise from './pages/SocialEnterprise';
 import WomenEmpowerment from './pages/WomenEmpowerment';
 import CommunityDevelopment from './pages/CommunityDevelopment';
-import Archives from './pages/Archives';
+import ContributionsPage from './pages/Contributions';
 import StockImagesGallery from './pages/StockImagesGallery';
 
 const App = () => {
@@ -25,7 +24,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/Her-early-life' element={<JourneyPage />} />
-        <Route path='/Her-contributions' element={<ContributionPage />} />
+        <Route path='/contributions' element={<ContributionsPage />} />
         <Route path='/archives' element={<ArchivePage />} />
         <Route path='/support' element={<SupportPage />} />
         <Route path='/blogs' element={<Blogs />} />

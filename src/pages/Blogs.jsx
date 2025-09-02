@@ -17,7 +17,8 @@ const BlogShowcase = () => {
       author: "Prachi Kaushik",
       category: "social-enterprise",
       image: "/api/placeholder/400/250",
-      readTime: "5 min read"
+      readTime: "5 min read",
+      link: "https://startup.siliconindia.com/startup_talks/how-can-women-enter-maledominated-jobs-in-2025-nwid-48737.html#google_vignette"
     },
     {
       id: 2,
@@ -27,7 +28,8 @@ const BlogShowcase = () => {
       author: "Prachi Kaushik",
       category: "menstrual-health",
       image: "/api/placeholder/400/250",
-      readTime: "7 min read"
+      readTime: "7 min read",
+      link: "https://opedmoped.com/business/women-supporting-women-the-importance-of-female-led-enterprises/"
     },
     {
       id: 3,
@@ -37,7 +39,8 @@ const BlogShowcase = () => {
       author: "Prachi Kaushik",
       category: "social-enterprise",
       image: "/api/placeholder/400/250",
-      readTime: "6 min read"
+      readTime: "6 min read",
+      link: "https://startuptalky.com/resources-training-opportunities-women-entrepreneurs-in-social-enterprises/"
     },
     {
       id: 4,
@@ -47,27 +50,8 @@ const BlogShowcase = () => {
       author: "Prachi Kaushik",
       category: "community",
       image: "/api/placeholder/400/250",
-      readTime: "8 min read"
-    },
-    {
-      id: 5,
-      title: "The 3A Framework: Awareness, Accessibility, Affordability in Menstrual Health",
-      excerpt: "Our comprehensive approach to tackling menstrual health issues through education, product access, and economic models.",
-      date: "2023-07-12",
-      author: "Prachi Kaushik",
-      category: "menstrual-health",
-      image: "/api/placeholder/400/250",
-      readTime: "5 min read"
-    },
-    {
-      id: 6,
-      title: "Building Ecosystems for Women Entrepreneurs",
-      excerpt: "How we're creating complete support systems—from training to market access—for women micro-entrepreneurs.",
-      date: "2023-06-28",
-      author: "Prachi Kaushik",
-      category: "entrepreneurship",
-      image: "/api/placeholder/400/250",
-      readTime: "9 min read"
+      readTime: "8 min read",
+      link: "https://startup.siliconindia.com/startup_talks/how-can-women-enter-maledominated-jobs-in-2025-nwid-48737.html#google_vignette"
     }
   ];
 
@@ -82,8 +66,8 @@ const BlogShowcase = () => {
   // Filter blog posts based on category and search query
   const filteredPosts = blogPosts.filter(post => {
     const matchesCategory = activeCategory === "all" || post.category === activeCategory;
-    const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
-                          post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
@@ -109,7 +93,7 @@ const BlogShowcase = () => {
 
   return (
     <div className="bg-secondary min-h-screen pt-20 pb-16">
-        <Navbar />
+      <Navbar />
       {/* Header Section */}
       <section className="max-w-6xl mx-auto px-6 md:px-12 py-12">
         <motion.div
@@ -122,13 +106,13 @@ const BlogShowcase = () => {
             Writings by Prachi Kaushik
           </h1>
           <p className="satoshi-regular text-lg md:text-xl text-text max-w-3xl mx-auto">
-            Insights, experiences, and perspectives from the forefront of women's empowerment, 
+            Insights, experiences, and perspectives from the forefront of women's empowerment,
             social entrepreneurship, and community development.
           </p>
         </motion.div>
 
         {/* Search and Filter Section */}
-        <motion.div 
+        <motion.div
           className="bg-white rounded-2xl customShadow p-6 mb-12"
           initial="hidden"
           animate="visible"
@@ -172,11 +156,10 @@ const BlogShowcase = () => {
                 <button
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
-                  className={`px-4 py-2 satoshi-medium rounded-full transition-colors ${
-                    activeCategory === category.id
+                  className={`px-4 py-2 satoshi-medium rounded-full transition-colors ${activeCategory === category.id
                       ? "bg-primary text-white"
                       : "bg-gray-100 text-text hover:bg-gray-200"
-                  }`}
+                    }`}
                   style={activeCategory === category.id ? { color: 'white' } : {}}
                 >
                   {category.name}
@@ -247,21 +230,24 @@ const BlogShowcase = () => {
                   {/* Read More Button */}
                   <div className="mt-6 pt-4 border-t border-gray-100">
                     <a
-                      href={`/blog/${post.id}`}
+                      href={post.link}  // <-- use external link here
+                      target="_blank"   // open in a new tab
+                      rel="noopener noreferrer" // security best practice
                       className="group/button relative inline-flex items-center gap-2 satoshi-bold overflow-hidden px-4 py-2 rounded-lg"
                     >
                       {/* Background element that slides in on hover */}
                       <span className="absolute inset-0 bg-primary transform -translate-x-full group-hover/button:translate-x-0 transition-transform duration-300 z-0"></span>
-                      
+
                       {/* Text */}
                       <span className="relative z-10 transition-colors duration-300 group-hover/button:text-white">
                         Read More
                       </span>
-                      
+
                       {/* Arrow icon */}
                       <ArrowRight className="w-4 h-4 transform group-hover/button:text-white transition-transform duration-300 relative z-10" />
                     </a>
                   </div>
+
                 </div>
               </motion.article>
             ))}
@@ -288,7 +274,7 @@ const BlogShowcase = () => {
               >
                 {/* Background element that slides in on hover */}
                 <span className="absolute inset-0 bg-primary transform -translate-x-full group-hover/clear:translate-x-0 transition-transform duration-300 z-0"></span>
-                
+
                 {/* Text */}
                 <span className="relative z-10 transition-colors duration-300 group-hover/clear:text-white">
                   Clear Filters
@@ -298,7 +284,7 @@ const BlogShowcase = () => {
           </motion.div>
         )}
       </section>
-        <Footer />
+      <Footer />
     </div>
   );
 };

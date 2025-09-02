@@ -118,8 +118,7 @@ const Archives = () => {
     { id: 'awards', label: 'Awards', icon: Award },
     { id: 'media', label: 'Media Coverage', icon: Newspaper },
     { id: 'events', label: 'Events', icon: Calendar },
-    { id: 'achievements', label: 'Achievements', icon: Users },
-    { id: 'recognition', label: 'Recognition', icon: Award }
+    { id: 'achievements', label: 'Achievements', icon: Users }
   ];
 
   const filteredItems = selectedCategory === 'all' 
@@ -244,7 +243,7 @@ const Archives = () => {
           className="text-center mb-12"
         >
           <h2 className="satoshi-bold text-3xl md:text-4xl lg:text-5xl text-primary drop-shadow-md mb-4 mt-10">
-            Archives & Recognition
+            Archives
           </h2>
           <p className="satoshi-regular text-lg text-gray-600 max-w-3xl mx-auto">
             Explore Prachi Kaushik's journey through awards, media features, speaking engagements, 
