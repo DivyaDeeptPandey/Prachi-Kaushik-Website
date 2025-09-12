@@ -2,14 +2,14 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, useScroll } from 'framer-motion';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import InitiativesNav from './Components/InitiativesNav';
-import VyominiModel from './Components/VyominiModel';
-import MenstrualHealth from './Components/MenstrualHealth';
-import EconomicEmpowerment from './Components/EconomicEmpowerment';
-import CommunityDevelopment from './Components/CommunityDevelopment';
-import Partnerships from './Components/Partnerships';
-import ImpactSection from './Components/ImpactSection';
-import GetInvolved from './Components/GetInvolved';
+import InitiativesNav from './components/InitiativesNav';
+import VyominiModel from './components/VyominiModel';
+import MenstrualHealth from './components/MenstrualHealth';
+import EconomicEmpowerment from './components/EconomicEmpowerment';
+import CommunityDevelopment from './components/CommunityDevelopment';
+import Partnerships from './components/Partnerships';
+import ImpactSection from './components/ImpactSection';
+import GetInvolved from './components/GetInvolved';
 
 const Initiatives = () => {
   const [activeSection, setActiveSection] = useState('vyomini-model');
