@@ -1,339 +1,247 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Users, Target, Heart, Star, TrendingUp, Calendar, MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
-const Achievements = () => {
-  // Achievement data
-  const stats = [
-    { icon: Users, number: "2.5M+", label: "Women Educated", description: "About menstrual health and hygiene" },
-    { icon: Target, number: "10K+", label: "Women Entrepreneurs", description: "Trained and supported" },
-    { icon: Heart, number: "5K+", label: "Women Treated", description: "Through medical camps" },
-    { icon: MapPin, number: "15+", label: "States Reached", description: "Across India" },
-  ];
+import img1 from '../assets/awards/scroll-pic1.jpg';
+import img2 from '../assets/awards/scroll-pic1.jpg';
+import img3 from '../assets/awards/scroll-pic1.jpg';
+import img4 from '../assets/awards/scroll-pic1.jpg';
+import img5 from '../assets/awards/scroll-pic1.jpg';
+import img6 from '../assets/awards/scroll-pic1.jpg';
+import { img } from 'framer-motion/client';
 
-  const awards = [
-    { 
-      title: "Women Transforming India Award", 
-      organization: "NITI Aayog", 
-      year: "2021",
-      description: "Selected as one of 75 women transforming India as part of India's 75th Independence celebration"
+const Awards = () => {
+  const awardsData = [
+    {
+      id: 1,
+      title: "Women Transforming India Award",
+      organization: "NITI Aayog",
+      year: "2023",
+      description: "Prachi Kaushik was honored as one of 75 extraordinary women from across India who are driving transformative change in their communities. This prestigious award recognizes her outstanding contributions to social change and women's empowerment through Vyomini Social Enterprise. The selection was made from thousands of nominations nationwide, highlighting her innovative approach to combining sustainable business models with profound social impact. The award ceremony was attended by government officials, industry leaders, and social change makers, celebrating her work in menstrual health awareness, economic empowerment, and grassroots development.",
+      image: img1,
+      link: "#",
+      category: "National"
     },
-    { 
-      title: "Rex Karamveer Global Fellowship", 
-      organization: "United Nations", 
+    {
+      id: 2,
+      title: "Rex Karamveer Global Fellowship & Chakra Award",
+      organization: "International Confederation of NGOs with United Nations",
+      year: "2023",
+      description: "This international recognition was awarded for exceptional social entrepreneurship and unwavering commitment to women's empowerment. The Rex Karamveer Award acknowledges Prachi's groundbreaking work in menstrual health and economic independence, particularly her innovative approach to breaking taboos around menstruation while creating sustainable livelihood opportunities. The award celebrates her vision of transforming rural women from beneficiaries to entrepreneurs, creating a ripple effect of empowerment across communities. The global fellowship provides a platform to share her model with international development organizations and scale impact across borders.",
+      image: img2,
+      link: "#",
+      category: "International"
+    },
+    {
+      id: 3,
+      title: "Social Entrepreneur of the Year",
+      organization: "National Entrepreneurship Awards",
+      year: "2024",
+      description: "Honored for developing an innovative social enterprise model that seamlessly combines sustainable business practices with profound social impact in women's health and economic empowerment. The award recognizes Vyomini's unique approach to creating a circular economy where women are not just recipients of aid but active participants in their own empowerment. The jury commended the scalability of the model, its financial sustainability, and the measurable impact on thousands of women's lives. This award comes with mentorship opportunities and access to national networks for further scaling the initiative.",
+      image: img3,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: 4,
+      title: "BW Businessworld Women Social Entrepreneur of the Year",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship and transformative work in creating women entrepreneurs across rural India. This award celebrates Prachi's ability to bridge the gap between social impact and business sustainability. The selection committee highlighted her innovative training programs, market linkage initiatives, and the creation of a supportive ecosystem for women entrepreneurs. The award also acknowledges her role in mentoring the next generation of social entrepreneurs and her contributions to policy discussions around women's economic empowerment at national forums.",
+      image: img3,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: 5,
+      title: "BRICS Chamber of Commerce Award",
+      organization: "BRICS CCI",
+      year: "2023",
+      description: "Awarded for exceptional contributions to women's economic empowerment and innovative approaches to social entrepreneurship within the BRICS nations framework. This international recognition highlights the potential for replicating Vyomini's model across developing economies. The award committee praised the sustainable nature of the enterprise and its alignment with the UN Sustainable Development Goals. The recognition comes with opportunities for cross-border collaborations and knowledge exchange with social entrepreneurs from Brazil, Russia, India, China, and South Africa, creating pathways for global impact.",
+      image: img4,
+      link: "#",
+      category: "International"
+    },
+    {
+      id: 6,
+      title: "Women Empowerment Champion Award",
+      organization: "FICCI",
       year: "2022",
-      description: "Presented by International Confederation of NGOs in partnership with the UN"
-    },
-    { 
-      title: "Social Entrepreneur of the Year", 
-      organization: "BRICS Chamber of Commerce", 
-      year: "2024",
-      description: "Recognized for outstanding contributions to social entrepreneurship"
-    },
-    { 
-      title: "BW Businessworld Women Social Entrepreneur", 
-      organization: "Businessworld", 
-      year: "2024",
-      description: "Awarded for exceptional work in women's empowerment and social change"
-    },
-  ];
-
-  const milestones = [
-    { year: "2017", event: "Founded Vyomini Social Enterprise", description: "Launched to empower women through entrepreneurship" },
-    { year: "2018", event: "First Manufacturing Unit Established", description: "Set up initial production facility in Delhi" },
-    { year: "2019", event: "Reached 100,000 Women", description: "Expanded programs to multiple states" },
-    { year: "2020", event: "COVID-19 Response Initiatives", description: "Adapted programs during pandemic, provided hygiene kits" },
-    { year: "2021", event: "National Recognition", description: "Received Women Transforming India Award from NITI Aayog" },
-    { year: "2022", event: "International Expansion", description: "Began planning initiatives for African countries" },
-    { year: "2023", event: "10,000th Entrepreneur Trained", description: "Milestone in economic empowerment" },
-    { year: "2024", event: "Policy Influence", description: "Contributed to Menstrual Hygiene Policy for Schools" },
+      description: "Recognized for pioneering work in menstrual health awareness and creating sustainable livelihood opportunities for women in underserved communities. This award from India's leading industry body celebrates the intersection of corporate social responsibility and grassroots empowerment. FICCI acknowledged Vyomini's innovative approach to addressing multiple SDGs simultaneously through a single integrated model. The award has opened doors for corporate partnerships and CSR collaborations, enabling the scaling of initiatives to reach more women across different geographies while maintaining the core philosophy of dignity through enterprise.",
+      image: img5,
+      link: "#",
+      category: "National"
+    }
   ];
 
   return (
-    <div className="min-h-screen bg-secondary pt-20">
-        <Navbar />
+    <div className="min-h-screen bg-secondary">
+      {/* Navbar */}
+      <Navbar />
+
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="bg-white rounded-bl-[8rem] pt-24 pb-16 md:pt-32 md:pb-24 px-4 md:px-8">
+        <div className="max-w-6xl mx-auto">
           <motion.div
-            className="text-center max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="text-center"
           >
-            <h1 className="satoshi-bold text-4xl md:text-5xl lg:text-6xl text-primary mb-6 drop-shadow-md">
-              Achievements
+            <div className="h-1 bg-primary rounded-full mx-auto mb-6" style={{ width: '6rem' }}></div>
+            <h1 className="satoshi-bold text-4xl md:text-5xl text-primary mb-6">
+              Awards & Recognitions
             </h1>
-            <p className="satoshi-medium text-xl md:text-2xl text-gray-700 mb-8">
-              A decade of transformative impact and recognition
+            <p className="satoshi-medium text-xl text-gray-700 max-w-3xl mx-auto mb-8">
+              Celebrating the national and international recognition for transformative work in women's empowerment and social entrepreneurship
             </p>
-            <div className="w-24 h-1 bg-primary mx-auto mb-12"></div>
           </motion.div>
         </div>
       </section>
 
-      {/* Impact Statistics */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="satoshi-bold text-3xl md:text-4xl text-primary mb-4 drop-shadow-md">
-              Impact By Numbers
-            </h2>
-            <p className="satoshi-regular text-gray-600 max-w-2xl mx-auto">
-              Quantifying a decade of dedication to women's empowerment
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
+      {/* All Awards - Large Card Format with Bigger Photos */}
+      <section className="py-16 md:py-20 px-4 md:px-8 bg-secondary">
+        <div className="max-w-6xl mx-auto">
+          <div className="space-y-20">
+            {awardsData.map((award, index) => (
               <motion.div
-                key={index}
-                className="text-center p-6 bg-secondary rounded-2xl customShadow"
-                initial={{ opacity: 0, y: 20 }}
+                key={award.id}
+                initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
+                className="bg-white rounded-2xl shadow-xl overflow-hidden"
               >
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <stat.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="satoshi-bold text-3xl text-primary mb-2">{stat.number}</h3>
-                <p className="satoshi-medium text-gray-900 mb-2">{stat.label}</p>
-                <p className="satoshi-regular text-gray-600 text-sm">{stat.description}</p>
-              </motion.div>
-            ))}
-          </div>
-
-          {/* Additional Stats */}
-          <motion.div
-            className="mt-16 bg-primary/5 rounded-2xl p-8 customShadow"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              <div>
-                <p className="satoshi-bold text-2xl md:text-3xl text-primary">15,000+</p>
-                <p className="satoshi-regular text-gray-700">Workshops Conducted</p>
-              </div>
-              <div>
-                <p className="satoshi-bold text-2xl md:text-3xl text-primary">400+</p>
-                <p className="satoshi-regular text-gray-700">Health Camps Organized</p>
-              </div>
-              <div>
-                <p className="satoshi-bold text-2xl md:text-3xl text-primary">10</p>
-                <p className="satoshi-regular text-gray-700">Manufacturing Units</p>
-              </div>
-              <div>
-                <p className="satoshi-bold text-2xl md:text-3xl text-primary">550+</p>
-                <p className="satoshi-regular text-gray-700">Dedicated Volunteers</p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Awards & Recognition */}
-      <section className="py-16 md:py-24 bg-primary/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="satoshi-bold text-3xl md:text-4xl text-primary mb-4 drop-shadow-md">
-              Awards & Recognition
-            </h2>
-            <p className="satoshi-regular text-gray-600 max-w-2xl mx-auto">
-              National and international recognition for transformative work
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {awards.map((award, index) => (
-              <motion.div
-                key={index}
-                className="bg-white rounded-2xl p-6 customShadow"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-              >
-                <div className="flex items-start mb-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                    <Award className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="satoshi-bold text-xl text-gray-900">{award.title}</h3>
-                    <p className="satoshi-medium text-primary">{award.organization} • {award.year}</p>
-                  </div>
-                </div>
-                <p className="satoshi-regular text-gray-700">{award.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Timeline */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="satoshi-bold text-3xl md:text-4xl text-primary mb-4 drop-shadow-md">
-              Journey Timeline
-            </h2>
-            <p className="satoshi-regular text-gray-600 max-w-2xl mx-auto">
-              Key milestones in Prachi Kaushik's remarkable journey
-            </p>
-          </motion.div>
-
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 h-full w-1 bg-primary/20"></div>
-            
-            {/* Timeline items */}
-            <div className="space-y-12">
-              {milestones.map((milestone, index) => (
-                <motion.div
-                  key={index}
-                  className={`flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
-                  initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                >
-                  <div className={`flex-none w-24 md:w-32 text-right ${index % 2 === 0 ? 'md:pr-8 order-1' : 'md:pl-8 order-3 md:text-left'}`}>
-                    <p className="satoshi-bold text-2xl text-primary">{milestone.year}</p>
-                  </div>
-                  
-                  <div className="flex-none order-2">
-                    <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-                      <div className="w-4 h-4 bg-white rounded-full"></div>
+                <div className="flex flex-col lg:flex-row">
+                  {/* Image Section - Larger */}
+                  <div className="lg:w-2/5">
+                    <div className="h-80 lg:h-full">
+                      <img
+                        src={award.image}
+                        alt={award.title}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </div>
                   
-                  <div className={`flex-1 bg-secondary rounded-2xl p-6 customShadow ${index % 2 === 0 ? 'ml-4 md:ml-0 order-3' : 'mr-4 md:mr-0 order-1'}`}>
-                    <h3 className="satoshi-bold text-xl text-gray-900 mb-2">{milestone.event}</h3>
-                    <p className="satoshi-regular text-gray-700">{milestone.description}</p>
+                  {/* Content Section */}
+                  <div className="lg:w-3/5 p-8 md:p-12">
+                    <div className="flex items-center gap-3 mb-6">
+                      <span className="satoshi-medium text-primary text-sm bg-primary/10 px-4 py-2 rounded-full">
+                        {award.category}
+                      </span>
+                      <span className="satoshi-medium text-gray-600 text-sm">
+                        {award.year}
+                      </span>
+                    </div>
+                    
+                    <h2 className="satoshi-bold text-3xl md:text-4xl text-primary mb-6">
+                      {award.title}
+                    </h2>
+                    
+                    <p className="satoshi-medium text-lg text-gray-700 mb-8">
+                      by {award.organization}
+                    </p>
+                    
+                    {/* Longer Description */}
+                    <p className="satoshi-regular text-gray-600 leading-relaxed text-lg mb-8">
+                      {award.description}
+                    </p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-16 md:py-20 px-4 md:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="satoshi-bold text-3xl md:text-4xl text-primary mb-12">
+              Impact Behind the Awards
+            </h2>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {[
+                { number: "6", label: "National Awards" },
+                { number: "2", label: "International Honors" },
+                { number: "25+", label: "Media Features" },
+                { number: "50+", label: "Speaking Engagements" }
+              ].map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="text-center"
+                >
+                  <div className="satoshi-bold text-4xl md:text-5xl text-primary mb-2">
+                    {stat.number}
+                  </div>
+                  <div className="satoshi-regular text-gray-600 text-sm">
+                    {stat.label}
                   </div>
                 </motion.div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
-      {/* Media Features */}
-      <section className="py-16 md:py-24 bg-primary/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* CTA Section */}
+      <section className="bg-secondary rounded-tr-[8rem] py-16 md:py-20 px-4 md:px-8">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div
-            className="text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
           >
-            <h2 className="satoshi-bold text-3xl md:text-4xl text-primary mb-4 drop-shadow-md">
-              Media Features & Publications
+            <h2 className="satoshi-bold text-3xl md:text-4xl text-primary mb-6">
+              Join the Movement
             </h2>
-            <p className="satoshi-regular text-gray-600 max-w-2xl mx-auto">
-              National recognition in prominent publications and media
+            <p className="satoshi-medium text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+              Be part of the transformation that's empowering women and communities across India
             </p>
-          </motion.div>
-
-          <motion.div
-            className="bg-white rounded-2xl p-8 customShadow"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="satoshi-bold text-xl text-gray-900 mb-4">Featured In</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <Star className="w-5 h-5 text-primary mr-3" />
-                    <span className="satoshi-regular text-gray-700">Businessworld Magazine</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Star className="w-5 h-5 text-primary mr-3" />
-                    <span className="satoshi-regular text-gray-700">The Economic Times</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Star className="w-5 h-5 text-primary mr-3" />
-                    <span className="satoshi-regular text-gray-700">Forbes India</span>
-                  </li>
-                  <li className="flex items-center">
-                    <Star className="w-5 h-5 text-primary mr-3" />
-                    <span className="satoshi-regular text-gray-700">YourStory</span>
-                  </li>
-                </ul>
-              </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.button
+                className="bg-primary text-secondary satoshi-medium py-3 px-8 rounded-lg hover:bg-primary/90 transition-colors duration-300"
+                whileHover={{ y: -2 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Partner With Us
+              </motion.button>
               
-              <div>
-                <h3 className="satoshi-bold text-xl text-gray-900 mb-4">Academic Publications</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-center">
-                    <TrendingUp className="w-5 h-5 text-primary mr-3" />
-                    <span className="satoshi-regular text-gray-700">South Asian Journal of Business & Management Cases</span>
-                  </li>
-                  <li className="flex items-center">
-                    <TrendingUp className="w-5 h-5 text-primary mr-3" />
-                    <span className="satoshi-regular text-gray-700">Social Entrepreneurship Review</span>
-                  </li>
-                </ul>
-              </div>
+              <Link to="/initiatives">
+                <motion.button
+                  className="border-2 border-primary text-primary satoshi-medium py-3 px-8 rounded-lg hover:bg-primary/10 transition-colors duration-300"
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                >
+                  Explore Initiatives
+                </motion.button>
+              </Link>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section className="py-16 md:py-24 bg-primary">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <h2 className="satoshi-bold text-3xl md:text-4xl text-secondary mb-6">
-              Join the Movement
-            </h2>
-            <p className="satoshi-regular text-secondary text-xl mb-8">
-              Be part of the journey to empower millions more women across India and beyond.
-            </p>
-            <motion.button
-              className="bg-secondary text-primary satoshi-medium py-3 px-8 rounded-lg transition-colors duration-300 hover:bg-white"
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Support Our Mission
-            </motion.button>
-          </motion.div>
-        </div>
-      </section>
-        <Footer />
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
 
-export default Achievements;
+export default Awards;

@@ -56,6 +56,13 @@ body, html {
   font-style: normal;
   color: var(--color-text);
 }
+.satoshi-large-bold {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
 
 .satoshi-large {
   font-family: 'Satoshi', sans-serif;
@@ -81,6 +88,9 @@ body, html {
   background-color: var(--color-primary);
 }
 
+.border-secondary{
+  border-color: var(--color-secondary);
+}
 .bg-secondary {
   background-color: var(--color-secondary);
 }
@@ -101,21 +111,122 @@ body, html {
 .customShadow {
   box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
 }
-.text-heading-lg {
+.text-heading-md{
+  font-size: 1.5rem;
+}
+.text-heading-lg {  
   font-size: 2rem;
 }
 .border-primary {
-  border-color: var(--color-primary);
+  border-color: var(--color-primary) !important;
 }
+.bg-secondary-10 {
+  background-color: rgba(249, 246, 243, 0.1);
+  backdrop-filter: blur(12px); /* 10% opacity */
+}
+.bg-secondary-20 {
+  background-color: rgba(249, 246, 243, 0.2);
+}
+.bg-primary-10 {
+  background-color: rgba(228, 54, 54, 0.1);
+  backdrop-filter: blur(12px); /* 10% opacity */
+}
+
+.bg-primary-15 {
+  background-color: rgba(228, 54, 54, 0.15);
+}
+
+.bg-primary-40 {
+  background-color: rgba(228, 54, 54, 0.4);
+}
+
 .border-secondary{
   border-color: var(--color-secondary);
 }
+
 .group:hover .group-hover\:text-primary {
   color: #E43636 !important;
 }
+/* Testimonial Card Styles */
+.snip1390 {
+  font-family: 'Satoshi', sans-serif;
+  position: relative;
+  overflow: hidden;
+  color: #000000;
+  text-align: center;
+  font-size: 16px;
+  background-color: #E43636; /* primary color */
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  box-sizing: border-box;
+  box-shadow: 0px 10px 30px rgba(228, 54, 54, 0.2);
+}
 
+.snip1390 *,
+.snip1390 *:before,
+.snip1390 *:after {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.snip1390 figcaption {
+  width: 100%;
+}
+
+.snip1390 h2,
+.snip1390 h4,
+.snip1390 blockquote {
+  margin: 0;
+}
+
+.snip1390 h2 {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.snip1390 h4 {
+  color: #F9F6F3; /* secondary color with opacity */
+  font-weight: 400;
+}
+
+.snip1390 blockquote {
+  font-size: 1em;
+  padding: 40px 30px 35px 45px;
+  margin-top: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  border: 1px solid rgba(228, 54, 54, 0.1);
+}
+
+.snip1390 blockquote:before {
+  content: "\201C";
+  position: absolute;
+  font-size: 60px;
+  opacity: 0.2;
+  font-style: normal;
+  top: 10px;
+  left: 20px;
+  color: #E43636; /* primary color */
+  font-family: 'Satoshi', sans-serif;
+}
+
+/* Profile image style */
+.snip1390 .profile {
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  border: solid 4px #F9F6F3; /* secondary color */
+}
 @media (min-width: 768px) {
   .text-heading-lg {
     font-size: 3rem;
+  }
+  .text-heading-md{
+    font-size: 2.5rem;
   }
 }
