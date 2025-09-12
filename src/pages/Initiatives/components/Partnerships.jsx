@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SectionHeader from './Sectionheader';
+import SectionHeader from './SectionHeader';
 import PartnerLogo1 from '../../../assets/logos/niti-aayog-logo.png';
 import PartnerLogo2 from '../../../assets/logos/Ministry_of_Women_and_Child_Development.svg';
 import PartnerLogo3 from '../../../assets/logos/NRLM_logo.png';
