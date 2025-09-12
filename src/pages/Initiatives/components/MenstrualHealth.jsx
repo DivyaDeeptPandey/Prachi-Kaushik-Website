@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SectionHeader from './Sectionheader';
+import SectionHeader from './SectionHeader';
 import MenstrualHealthImage from '../../../assets/initiatives/scroll-pic6.jpg';
 
 const MenstrualHealth = ({ sectionRef }) => {
