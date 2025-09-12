@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import HomePage from './pages/homepage/homePage'
+import HomePage from './pages/homepage/HomePage'
 import ArchivePage from './pages/Archives'
 import SupportPage from './pages/supportPage';
 import Blogs from './pages/Blogs';
