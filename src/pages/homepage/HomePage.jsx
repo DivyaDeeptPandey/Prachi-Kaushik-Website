@@ -9,6 +9,7 @@ import JoinHerMovement from './JoinHerMovement.jsx'
 import Footer from '../../components/Footer.jsx'
 import Testimonials from './Testimonials.jsx'
 import MediaFeatures from './MediaFeatures.jsx'
+import AwardsRecognition from './AwardsRecognition.jsx'
 
 
 const HomePage = () => {
@@ -22,6 +23,7 @@ const HomePage = () => {
       <ImpactStatistics/>
   
       <Testimonials />
+      <AwardsRecognition/>
       <MediaFeatures />
       <JoinHerMovement />
       <Footer />

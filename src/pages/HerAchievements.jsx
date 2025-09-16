@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -10,12 +10,12 @@ import img3 from '../assets/awards/scroll-pic1.jpg';
 import img4 from '../assets/awards/scroll-pic1.jpg';
 import img5 from '../assets/awards/scroll-pic1.jpg';
 import img6 from '../assets/awards/scroll-pic1.jpg';
-import { img } from 'framer-motion/client';
 
 const Awards = () => {
+  const location = useLocation();
   const awardsData = [
     {
-      id: 1,
+      id: "NITI-ayog-award",
       title: "Women Transforming India Award",
       organization: "NITI Aayog",
       year: "2023",
@@ -25,7 +25,7 @@ const Awards = () => {
       category: "National"
     },
     {
-      id: 2,
+      id: 'rex-karamveer-award',
       title: "Rex Karamveer Global Fellowship & Chakra Award",
       organization: "International Confederation of NGOs with United Nations",
       year: "2023",
@@ -35,27 +35,7 @@ const Awards = () => {
       category: "International"
     },
     {
-      id: 3,
-      title: "Social Entrepreneur of the Year",
-      organization: "National Entrepreneurship Awards",
-      year: "2024",
-      description: "Honored for developing an innovative social enterprise model that seamlessly combines sustainable business practices with profound social impact in women's health and economic empowerment. The award recognizes Vyomini's unique approach to creating a circular economy where women are not just recipients of aid but active participants in their own empowerment. The jury commended the scalability of the model, its financial sustainability, and the measurable impact on thousands of women's lives. This award comes with mentorship opportunities and access to national networks for further scaling the initiative.",
-      image: img3,
-      link: "#",
-      category: "National"
-    },
-    {
-      id: 4,
-      title: "BW Businessworld Women Social Entrepreneur of the Year",
-      organization: "Businessworld",
-      year: "2024",
-      description: "Recognized for outstanding leadership in social entrepreneurship and transformative work in creating women entrepreneurs across rural India. This award celebrates Prachi's ability to bridge the gap between social impact and business sustainability. The selection committee highlighted her innovative training programs, market linkage initiatives, and the creation of a supportive ecosystem for women entrepreneurs. The award also acknowledges her role in mentoring the next generation of social entrepreneurs and her contributions to policy discussions around women's economic empowerment at national forums.",
-      image: img3,
-      link: "#",
-      category: "National"
-    },
-    {
-      id: 5,
+      id: "brics-award",
       title: "BRICS Chamber of Commerce Award",
       organization: "BRICS CCI",
       year: "2023",
@@ -65,16 +45,33 @@ const Awards = () => {
       category: "International"
     },
     {
-      id: 6,
-      title: "Women Empowerment Champion Award",
-      organization: "FICCI",
-      year: "2022",
-      description: "Recognized for pioneering work in menstrual health awareness and creating sustainable livelihood opportunities for women in underserved communities. This award from India's leading industry body celebrates the intersection of corporate social responsibility and grassroots empowerment. FICCI acknowledged Vyomini's innovative approach to addressing multiple SDGs simultaneously through a single integrated model. The award has opened doors for corporate partnerships and CSR collaborations, enabling the scaling of initiatives to reach more women across different geographies while maintaining the core philosophy of dignity through enterprise.",
-      image: img5,
+      id: "bw-award",
+      title: "BW Businessworld Women Social Entrepreneur of the Year",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship and transformative work in creating women entrepreneurs across rural India. This award celebrates Prachi's ability to bridge the gap between social impact and business sustainability. The selection committee highlighted her innovative training programs, market linkage initiatives, and the creation of a supportive ecosystem for women entrepreneurs. The award also acknowledges her role in mentoring the next generation of social entrepreneurs and her contributions to policy discussions around women's economic empowerment at national forums.",
+      image: img3,
       link: "#",
       category: "National"
     }
   ];
+
+  // Create refs for each award section
+  const awardRefs = useRef({});
+
+  // Handle hash-based scrolling
+  useEffect(() => {
+    const hash = location.hash.replace('#', '');
+    if (hash && awardRefs.current[hash]) {
+      // Wait for the page to load and then scroll to the element
+      setTimeout(() => {
+        awardRefs.current[hash]?.scrollIntoView({ 
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }, 100);
+    }
+  }, [location.hash]);
 
   return (
     <div className="min-h-screen bg-secondary">
@@ -108,11 +105,12 @@ const Awards = () => {
             {awardsData.map((award, index) => (
               <motion.div
                 key={award.id}
+                ref={(el) => (awardRefs.current[award.id] = el)}
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden"
+                className="bg-white rounded-2xl shadow-xl overflow-hidden scroll-mt-20"
               >
                 <div className="flex flex-col lg:flex-row">
                   {/* Image Section - Larger */}

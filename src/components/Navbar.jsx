@@ -23,10 +23,6 @@
 
     const menuItems = [
       { 
-        name: 'Home', 
-        href: '/',
-      },
-      { 
         name: 'Her Story', 
         href: '/her-story',
       },

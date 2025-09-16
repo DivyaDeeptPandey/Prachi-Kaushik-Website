@@ -157,7 +157,7 @@ const Testimonials = () => {
                 animate={{ opacity: 0.6, x: 0 }}
                 transition={{ duration: 0.5 }}
               >
-                <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-md h-full">
+                <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-md h-full ">
                   <div className="w-16 h-16 border-2 border-gray-300 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="satoshi-bold text-gray-400 text-lg">
                       {visibleTestimonials[0].initials}
@@ -185,9 +185,9 @@ const Testimonials = () => {
                   exit={{ opacity: 0, x: -50, scale: 0.9 }}
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                 >
-                  <div className="bg-white border-2 border-primary rounded-2xl p-8 shadow-xl relative">
+                  <div className="rounded-2xl p-8 shadow-xl relative bg-primary">
                     {/* Highlight effect */}
-                    <div className="absolute -inset-2 bg-primary/10 rounded-3xl -z-10 blur-md"></div>
+                    <div className="absolute -inset-2 bg-primary-15 rounded-3xl -z-10 blur-md"></div>
 
                     <div className="w-20 h-20 border-2 border-primary rounded-full mx-auto mb-6 shadow-lg flex items-center justify-center bg-white">
                       <span className="satoshi-bold text-primary text-xl">
@@ -196,15 +196,15 @@ const Testimonials = () => {
                     </div>
 
                     <figcaption>
-                      <h2 className="satoshi-bold text-primary text-lg md:text-xl mb-2">
+                      <h2 className="satoshi-bold text-secondary text-lg md:text-xl mb-2">
                         {visibleTestimonials[1].name}
                       </h2>
-                      <h4 className="satoshi-regular text-primary/80 text-sm mb-6">
+                      <h4 className="satoshi-regular text-primary/80 text-sm mb-6 text-secondary">
                         {visibleTestimonials[1].role}
                         {visibleTestimonials[1].location && ` • ${visibleTestimonials[1].location}`}
                       </h4>
 
-                      <blockquote className="satoshi-regular bg-secondary text-gray-800 text-base leading-relaxed py-6 px-8 rounded-lg shadow-inner relative">
+                      <blockquote className="satoshi-regular bg-secondary text-gray-800 text-base leading-relaxed py-6 px-8 rounded-lg shadow-inner   relative">
                         <div className="absolute top-2 left-3 text-primary text-3xl">"</div>
                         {visibleTestimonials[1].quote}
                         <div className="absolute bottom-2 right-3 text-primary text-3xl">"</div>
