@@ -49,8 +49,8 @@ const MediaFeatures = () => {
   ];
 
   return (
-    <div className="bg-white">
-      <section className="bg-secondary py-16 md:py-20 px-4 md:px-8 rounded-tr-[8rem] overflow-hidden">
+    <div className="bg-secondary">
+      <section className=" bg-white py-16 md:py-20 px-4 md:px-8 rounded-tr-[8rem] overflow-hidden">
         <div className="max-w-6xl mx-auto">
           
           {/* Section Header */}
@@ -66,7 +66,7 @@ const MediaFeatures = () => {
               style={{ width: 'clamp(4rem, 10vw, 6rem)' }}
             ></div>
             <motion.h2
-              className="satoshi-bold text-4xl md:text-5xl text-primary mb-6"
+              className="satoshi-bold text-4xl md:text-4xl text-primary mb-6"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -93,9 +93,6 @@ const MediaFeatures = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3 className="satoshi-bold text-2xl md:text-3xl text-primary mb-12">
-              Featured In Leading Publications
-            </h3>
 
             {/* Media Logos Grid */}
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 max-w-5xl mx-auto mb-16">

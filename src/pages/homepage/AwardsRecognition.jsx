@@ -52,7 +52,7 @@ const AwardsRecognition = () => {
 
   return (
     <div className="bg-white">
-      <section className="bg-secondary py-16 md:py-20 px-4 md:px-8 rounded-tl-[8rem] overflow-hidden">
+      <section className="bg-secondary py-16 md:py-20 px-4 md:px-8 rounded-tl-[8rem] rounded-bl-[8rem] overflow-hidden">
         <div className="max-w-6xl mx-auto">
           
           {/* Section Header */}
@@ -68,7 +68,7 @@ const AwardsRecognition = () => {
               style={{ width: 'clamp(4rem, 10vw, 6rem)' }}
             ></div>
             <motion.h2
-              className="satoshi-bold text-4xl md:text-5xl text-primary mb-6"
+              className="satoshi-bold text-3xl md:text-4xl text-primary mb-6"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -77,7 +77,7 @@ const AwardsRecognition = () => {
               Prestigious Awards
             </motion.h2>
             <motion.p
-              className="satoshi-regular text-xl text-gray-700 max-w-2xl mx-auto"
+              className="satoshi-regular text-xl text-gray-700 max-w-2xl mx-auto mb-8"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}

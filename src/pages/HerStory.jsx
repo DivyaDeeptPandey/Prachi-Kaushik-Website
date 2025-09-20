@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 // Import images for each section
-import HeroImage from '../assets/her-story/EarlyLife.jpg';
+import HeroImage from '../assets/her-story/HeroImg.jpg';
 import EarlyLifeImage from '../assets/her-story/EarlyLife.jpg';
 import InspirationImage from '../assets/her-story/JOURNEY copy.JPG';
 import FoundingVyominiImage from '../assets/her-story/LIVLIHOOD.jpg';
@@ -13,7 +13,6 @@ import BreakingTaboosImage from '../assets/her-story/MHM01.jpg';
 import EconomicEmpowermentImage from '../assets/her-story/WhatsApp Image 2023-09-21 at 23.02.23-3.jpeg';
 import CommunityImpactImage from '../assets/her-story/WOMEN EMPP0.jpg';
 
-// Sticky Navigator Component
 // Sticky Navigator Component
 const StickyNav = ({ sections, activeSection }) => {
   // Check if we are in the last section
@@ -28,7 +27,7 @@ const StickyNav = ({ sections, activeSection }) => {
             href={`#${section.id}`}
             className={`flex items-center justify-end satoshi-medium transition-all duration-300 ${activeSection === section.id
                 ? isOnConclusion
-                  ? "text-secondary text-lg" // ✅ White when active on conclusion
+                  ? "text-secondary text-lg"
                   : "text-primary text-lg"
                 : isOnConclusion
                   ? "text-white/60 hover:text-white text-sm" // ✅ Faded white for inactive links
@@ -210,7 +209,7 @@ const HerStory = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="bg-white">
       <Navbar />
       {/* Sticky Navigator */}
       <StickyNav sections={navSections} activeSection={activeSection} />
@@ -219,16 +218,8 @@ const HerStory = () => {
       <section
         id="page-hero"
         ref={sectionRefs['page-hero']}
-        className="min-h-[60vh] md:min-h-[80vh] bg-secondary flex items-center justify-center rounded-bl-[8rem] px-4 md:px-8 relative overflow-hidden"
+        className="min-h-[40vh] md:min-h-[60vh] bg-secondary flex items-center justify-center rounded-bl-[8rem] px-4 md:px-8 relative overflow-hidden"
       >
-        <div className="absolute inset-0 z-0">
-          <img
-            src={HeroImage}
-            alt="Prachi Kaushik - Social Entrepreneur"
-            className="w-full h-full object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-secondary/80"></div>
-        </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.h1
             className="satoshi-bold text-4xl md:text-5xl lg:text-6xl text-primary mb-6"
@@ -239,7 +230,7 @@ const HerStory = () => {
             Her Story
           </motion.h1>
           <motion.p
-            className="satoshi-medium text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto"
+            className="satoshi-regular text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -271,7 +262,7 @@ const HerStory = () => {
               <img
                 src={EarlyLifeImage}
                 alt="Early life challenges in Delhi"
-                className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                className="w-full h-auto object-cover rounded-2xl shadow-lg"
               />
             </motion.div>
             <motion.div

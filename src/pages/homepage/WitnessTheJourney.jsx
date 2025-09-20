@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const WatchTheJourney = () => {
   return (
-      <section className="bg-secondary py-8 md:py-10 px-4 md:px-8 rounded-tl-[8rem] rounded-bl-[8rem] overflow-hidden">
+      <section className="bg-secondary min-h-screen py-16 md:py-20 px-4 md:px-8 rounded-tl-[8rem] rounded-bl-[8rem] overflow-hidden">
       <div className="max-w-4xl mx-auto">
         <div 
         className="h-1 bg-primary rounded-full mx-auto mb-2"

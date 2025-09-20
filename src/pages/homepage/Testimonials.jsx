@@ -154,7 +154,7 @@ const Recognitions = () => {
                   transition={{ duration: 0.6, ease: "easeInOut" }}
                   onClick={() => openModal(visibleRecognitions[1].image)}
                 >
-                  <div className="rounded-2xl shadow-2xl overflow-hidden relative">
+                  <div className="rounded-2xl shadow-2xl overflow-hidden relative bg-secondary">
                     <img
                       src={visibleRecognitions[1].image}
                       alt="Recognition"
