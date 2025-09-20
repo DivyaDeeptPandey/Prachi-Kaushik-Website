@@ -14,36 +14,39 @@ import EconomicEmpowermentImage from '../assets/her-story/WhatsApp Image 2023-09
 import CommunityImpactImage from '../assets/her-story/WOMEN EMPP0.jpg';
 
 // Sticky Navigator Component
+// Sticky Navigator Component
 const StickyNav = ({ sections, activeSection }) => {
   // Check if we are in the last section
   const isOnConclusion = activeSection === "conclusion";
 
   return (
-    <nav className="hidden lg:block fixed top-1/2 right-8 transform -translate-y-1/2 z-40">
-      <div className="flex flex-col items-end space-y-4">
+    <nav className="hidden lg:block fixed top-1/2 right-4 lg:right-8 transform -translate-y-1/2 z-40">
+      <div className="flex flex-col items-end space-y-4 bg-white/70 backdrop-blur-2xs shadow-lg p-3 rounded-xl">
         {sections.map((section) => (
           <a
             key={section.id}
             href={`#${section.id}`}
-            className={`flex items-center justify-end satoshi-medium transition-all duration-300 ${activeSection === section.id
+            className={`flex items-center justify-end satoshi-medium transition-all duration-300 ${
+              activeSection === section.id
                 ? isOnConclusion
                   ? "text-secondary text-lg"
                   : "text-primary text-lg"
                 : isOnConclusion
-                  ? "text-white/60 hover:text-white text-sm" // ✅ Faded white for inactive links
-                  : "text-gray-400 hover:text-gray-600 text-sm"
-              }`}
+                ? "text-white/60 hover:text-white text-sm"
+                : "text-gray-400 hover:text-gray-600 text-sm"
+            }`}
           >
             <span className="mr-2">{section.name}</span>
             <div
-              className={`h-0.5 rounded-full transition-all duration-300 ${activeSection === section.id
+              className={`h-0.5 rounded-full transition-all duration-300 ${
+                activeSection === section.id
                   ? isOnConclusion
-                    ? "w-8 bg-secondary" // ✅ White active underline
+                    ? "w-8 bg-secondary"
                     : "w-8 bg-primary"
                   : isOnConclusion
-                    ? "w-4 bg-secondary" // ✅ White faded inactive underline
-                    : "w-4 bg-secondary"
-                }`}
+                  ? "w-4 bg-secondary"
+                  : "w-4 bg-secondary"
+              }`}
             />
           </a>
         ))}
@@ -51,6 +54,7 @@ const StickyNav = ({ sections, activeSection }) => {
     </nav>
   );
 };
+
 
 
 // Generic Section Header Component (Reusable)
@@ -218,7 +222,7 @@ const HerStory = () => {
       <section
         id="page-hero"
         ref={sectionRefs['page-hero']}
-        className="min-h-[40vh] md:min-h-[60vh] bg-secondary flex items-center justify-center rounded-bl-[8rem] px-4 md:px-8 relative overflow-hidden"
+        className="min-h-[40vh] md:min-h-[60vh] bg-secondary flex items-center justify-center rounded-bl-[8rem] px-4 md:px-60 relative overflow-hidden"
       >
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <motion.h1
@@ -244,7 +248,7 @@ const HerStory = () => {
       <section
         id="early-life"
         ref={sectionRefs['early-life']}
-        className="h-screen py-12 md:py-16 px-4 md:px-8 bg-white"
+        className="h-screen py-12 md:py-16 px-8 md:px-60 bg-white"
       >
         <div className="max-w-6xl mx-auto">
           <SectionHeader
@@ -303,7 +307,7 @@ const HerStory = () => {
       <section
         id="inspiration"
         ref={sectionRefs['inspiration']}
-        className="h-screen py-16 md:py-20 px-4 md:px-8 bg-secondary rounded-tl-[8rem] rounded-bl-[8rem]"
+        className="h-screen py-16 md:py-20 px-4 md:px-60 bg-secondary rounded-tl-[8rem] rounded-bl-[8rem]"
       >
         <div className="max-w-6xl mx-auto">
           <SectionHeader
@@ -353,7 +357,7 @@ const HerStory = () => {
         <section
           id="founding-vyomini"
           ref={sectionRefs['founding-vyomini']}
-          className="h-screen py-16 md:py-20 px-4 md:px-8 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
+          className="h-screen py-16 md:py-20 px-4 md:px-60 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
         >
           <div className="max-w-6xl mx-auto">
             <SectionHeader
@@ -414,7 +418,7 @@ const HerStory = () => {
       <section
         id="breaking-taboos"
         ref={sectionRefs['breaking-taboos']}
-        className="h-screen py-16 md:py-20 px-4 md:px-8 bg-secondary rounded-tl-[8rem] rounded-bl-[8rem]"
+        className="h-screen py-16 md:py-20 px-4 md:px-60 bg-secondary rounded-tl-[8rem] rounded-bl-[8rem]"
       >
         <div className="max-w-6xl mx-auto">
           <SectionHeader
@@ -475,7 +479,7 @@ const HerStory = () => {
         <section
           id="economic-empowerment"
           ref={sectionRefs['economic-empowerment']}
-          className="h-screen py-16 md:py-20 px-4 md:px-8 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
+          className="h-screen py-16 md:py-20 px-4 md:px-73 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
         >
           <div className="max-w-6xl mx-auto">
             <SectionHeader
@@ -520,7 +524,7 @@ const HerStory = () => {
       <section
         id="community-impact"
         ref={sectionRefs['community-impact']}
-        className="h-screen py-16 md:py-20 px-4 md:px-8 bg-secondary rounded-tl-[8rem]"
+        className="h-screen py-16 md:py-20 px-4 md:px-68 bg-secondary rounded-tl-[8rem]"
       >
         <div className="max-w-6xl mx-auto">
           <SectionHeader
@@ -593,7 +597,7 @@ const HerStory = () => {
       <section
         id="conclusion"
         ref={sectionRefs['conclusion']}
-        className="py-16 md:py-20 px-4 md:px-8 bg-primary text-secondary"
+        className="py-16 md:py-20 px-4 md:px-60 bg-primary text-secondary"
       >
         <div className="max-w-4xl mx-auto text-center">
           <SectionHeader
@@ -619,13 +623,13 @@ const HerStory = () => {
           >
             <Link
               to="/initiatives"
-              className="bg-secondary text-primary satoshi-medium py-3 px-8 rounded-lg text-center transition-colors duration-300 hover:bg-white"
+              className="bg-secondary text-primary satoshi-medium py-3 px-60 rounded-lg text-center transition-colors duration-300 hover:bg-white"
             >
               Support Initiatives
             </Link>
             <Link
               to="/contact"
-              className="border-2 border-secondary text-secondary satoshi-medium py-3 px-8 rounded-lg text-center transition-colors duration-300 hover:bg-white hover:text-primary"
+              className="border-2 border-secondary text-secondary satoshi-medium py-3 px-60 rounded-lg text-center transition-colors duration-300 hover:bg-white hover:text-primary"
             >
               Explore Ongoing Work
             </Link>

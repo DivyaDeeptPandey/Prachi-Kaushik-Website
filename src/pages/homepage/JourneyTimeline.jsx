@@ -3,21 +3,17 @@ import { motion, useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // Import your timeline images
-import HumbleBeginningImg from "../../assets/timeline/JOURNEYY.jpg";
-import EducationImg from "../../assets/timeline/JOURNEy09.jpg";
-import AwakeningImg from "../../assets/timeline/JOURNEY 1.jpg";
-import FoundingVyominiImg from "../../assets/timeline/journay par 22.jpg";
-import NationalImpactImg from "../../assets/timeline/WhatsApp Image 2018-07-31 at 02.24.42(2).jpeg";
-import GlobalRecognitionImg from "../../assets/timeline/79095275_1030580017289346_703290457949470720_n.jpg";
-import NationalRecognitionImg from "../../assets/timeline/NITI AYOG POST.jpg"
+import HumbleBeginningImg from "../../assets/timeline/humble-beginings.jpg";
+import EducationImg from "../../assets/timeline/education.jpg";
+import AwakeningImg from "../../assets/timeline/awakening.jpg";
+import FoundingVyominiImg from "../../assets/timeline/humble-beginings.jpg";
+import NationalImpactImg from "../../assets/timeline/national-impact.jpeg";
+import GlobalRecognitionImg from "../../assets/timeline/global-recognition.jpg";
+import NationalRecognitionImg from "../../assets/timeline/national-recognition.jpg"
 
 const VisualJourneyTimeline = () => {
   const containerRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(0);
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["start start", "end end"],
-  });
 
   const milestones = [
     {
@@ -210,7 +206,7 @@ const VisualJourneyTimeline = () => {
                       </h3>
 
                       {/* Image */}
-                      <div className="aspect-[15/9] mb-4 rounded-lg overflow-hidden">
+                      <div className="aspect-[16/9] mb-4 rounded-lg overflow-hidden">
                         <img
                           src={milestone.image}
                           alt={milestone.title}
@@ -220,7 +216,7 @@ const VisualJourneyTimeline = () => {
 
                       {/* Quote */}
                       {milestone.quote && (
-                        <blockquote className="satoshi-medium text-primary text-xl italic mb-3 pl-3 border-l-2 border-primary/30">
+                        <blockquote className="satoshi-bold text-primary text-xl italic mb-3 pl-3 border-l-2 border-primary/30">
                           "{milestone.quote}"
                         </blockquote>
                       )}
