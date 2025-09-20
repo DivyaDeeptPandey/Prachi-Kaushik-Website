@@ -23,9 +23,9 @@ const Partnerships = ({ sectionRef }) => {
       <div className="max-w-6xl mx-auto">
         <SectionHeader
           title="Strategic Partnerships"
-          subtitle="Collaborating with government, corporate, and NGO partners for greater impact"
+          subtitle="Collaborating for greater impact"
         />
-        
+        <p className='satoshi-regular'>Vyomini actively collaborates with government agencies, corporates, and NGOs to expand reach, strengthen programs, and scale sustainable impact. These partnerships enable us to combine expertise and resources for maximum transformation at the grassroots level.</p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center">
           {partners.map((partner, index) => (
             <motion.div

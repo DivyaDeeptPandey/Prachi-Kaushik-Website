@@ -8,7 +8,6 @@ import MenstrualHealth from './components/MenstrualHealth';
 import EconomicEmpowerment from './components/EconomicEmpowerment';
 import CommunityDevelopment from './components/CommunityDevelopment';
 import Partnerships from './components/Partnerships';
-import ImpactSection from './components/ImpactSection';
 import GetInvolved from './components/GetInvolved';
 
 const Initiatives = () => {
@@ -97,7 +96,6 @@ const Initiatives = () => {
       <EconomicEmpowerment sectionRef={sectionRefs['economic-empowerment']} />
       <CommunityDevelopment sectionRef={sectionRefs['community-development']} />
       <Partnerships sectionRef={sectionRefs['partnerships']} />
-      <ImpactSection sectionRef={sectionRefs['impact']} />
       <GetInvolved sectionRef={sectionRefs['get-involved']} />
 
       <Footer />

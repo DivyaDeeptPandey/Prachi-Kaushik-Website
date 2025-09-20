@@ -74,7 +74,7 @@ const AwardsRecognition = () => {
               transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              Prestigious Awards & Recognition
+              Prestigious Awards
             </motion.h2>
             <motion.p
               className="satoshi-regular text-xl text-gray-700 max-w-2xl mx-auto"

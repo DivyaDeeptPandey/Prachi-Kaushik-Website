@@ -25,8 +25,32 @@ const InitiativesPreview = () => {
       alt: "Prachi Kaushik training women entrepreneurs at a Vyomini incubation center"
     },
     {
-      title: "Community & Health Development",
-      description: "On-ground health camps, sanitation drives, and holistic community development programs.",
+      title: "Community Development",
+      description: "Organizing on-ground health camps, sanitation drives, and holistic community development programs.",
+      image: communityImage,
+      link: "/initiatives#community-development",
+      stats: "400+ Health Camps",
+      alt: "Prachi Kaushik at a community health camp with medical staff and beneficiaries"
+    },
+    {
+      title: "Youth Empowerment",
+      description: "Organizing on-ground health camps, sanitation drives, and holistic community development programs.",
+      image: communityImage,
+      link: "/initiatives#community-development",
+      stats: "400+ Health Camps",
+      alt: "Prachi Kaushik at a community health camp with medical staff and beneficiaries"
+    },
+    {
+      title: "Voice against, violence against women",
+      description: "Organizing on-ground health camps, sanitation drives, and holistic community development programs.",
+      image: communityImage,
+      link: "/initiatives#community-development",
+      stats: "400+ Health Camps",
+      alt: "Prachi Kaushik at a community health camp with medical staff and beneficiaries"
+    },
+    {
+      title: "Community Development",
+      description: "Organizing on-ground health camps, sanitation drives, and holistic community development programs.",
       image: communityImage,
       link: "/initiatives#community-development",
       stats: "400+ Health Camps",
@@ -77,7 +101,7 @@ const InitiativesPreview = () => {
           {initiatives.map((initiative, index) => (
             <motion.div
               key={initiative.title}
-              className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
+              className="bg-secondary border-b-5 border-primary rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -91,14 +115,12 @@ const InitiativesPreview = () => {
                   alt={initiative.alt}
                   className="w-full h-full object-cover"
                 />
-                {/*  Gradient overlay for better text readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
 
               {/* Content */}
-              <div className="p-6 md:p-8 flex flex-col flex-grow">
+              <div className="p-4 md:p-6 flex flex-col flex-grow">
                 {/* Title */}
-                <h3 className="satoshi-bold text-xl md:text-2xl text-gray-900 mb-4">
+                <h3 className="satoshi-bold text-xl md:text-2xl text-primary mb-4">
                   {initiative.title}
                 </h3>
 
@@ -106,7 +128,7 @@ const InitiativesPreview = () => {
                 <p className="satoshi-regular text-gray-600 mb-6 flex-grow">
                   {initiative.description}
                 </p>
-
+                <div className='border-t-2 w-full border-primary mb-5'></div>
                 {/* Stats */}
                 <div className="mb-6">
                   <p className="satoshi-medium text-primary text-sm md:text-base">

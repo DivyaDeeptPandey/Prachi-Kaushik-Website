@@ -63,7 +63,7 @@ const HeroSection = () => {
           </motion.h2>
 
           <motion.p
-            className="satoshi-medium text-gray-800 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0"
+            className="satoshi-regular mb-8 leading-relaxed max-w-lg mx-auto md:mx-0"
             style={{
               fontSize: 'clamp(1rem, 2vw, 1.15rem)'
             }}
@@ -71,7 +71,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
           >
-            Ms. Prachi Kaushik is a social entrepreneur transforming women's lives through menstrual health awareness, economic empowerment, and grassroots development. Founder of Vyomini, she has educated over 2.5 million women and created 10,000+ women entrepreneurs.
+            Ms. Prachi Kaushik is a social entrepreneur dedicated to transforming women’s lives through menstrual health awareness, economic empowerment, and grassroots development. As the Founder of Vyomini social enterprise, she has educated over 3 million women and nurtured more than 10,000 women entrepreneurs.
           </motion.p>
 
           <motion.div

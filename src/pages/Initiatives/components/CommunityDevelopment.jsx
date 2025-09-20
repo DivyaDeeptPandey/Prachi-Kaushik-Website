@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from './SectionHeader';
-import CommunityDevelopmentImage from '../../../assets/initiatives/scroll-pic6.jpg';
+import CommunityDevelopmentImage from '../../../assets/initiatives/FB_IMG_1535990631609.jpg';
 
 const CommunityDevelopment = ({ sectionRef }) => {
   return (
@@ -25,17 +25,20 @@ const CommunityDevelopment = ({ sectionRef }) => {
           >
             <div className="prose prose-lg max-w-none satoshi-regular text-gray-700 space-y-6">
               <p>
-                Through Vyomini Suvidha Kendra, we bridge the gap between marginalized communities and essential 
-                government welfare schemes. We've helped thousands access documentation, pensions, and healthcare services.
+                Through Vyomini Suvidha Kendra, we bridge the gap between marginalized communities and essential government welfare schemes. Thousands of families have gained access to documentation, pensions, and healthcare services.
               </p>
               <p>
-                Our health camps serve 400-500 women each, with some reaching up to 1,000 participants. Over 400 camps 
-                conducted in the past 10 years provide critical healthcare access to underserved communities.
+                We also organize regular health camps, each serving 400–500 women, with some reaching up to 1,000 participants. Over the last decade, we have conducted more than 400 health camps, providing critical healthcare to underserved communities.
               </p>
-              <p>
-                Special projects include water crisis intervention in Mathura, prisoner reform programs, youth skill 
-                development in Bahraich, and Anganwadi worker training across Haryana.
-              </p>
+              <div>
+                <p className="font-medium mb-2">Special Projects:</p>
+                <ul className="list-disc list-inside space-y-1 pl-4">
+                  <li>Water Crisis Intervention in Mathura</li>
+                  <li>Prisoner Reform Programs for rehabilitation</li>
+                  <li>Youth Skill Development in Bahraich</li>
+                  <li>Anganwadi Worker Training across Haryana</li>
+                </ul>
+              </div>
             </div>
           </motion.div>
 

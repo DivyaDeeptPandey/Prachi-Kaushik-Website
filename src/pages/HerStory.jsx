@@ -5,14 +5,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 // Import images for each section
-import HeroImage from '../assets/her-story/journey-pic.png';
-import EarlyLifeImage from '../assets/her-story/journey-pic.png';
-import InspirationImage from '../assets/her-story/journey-pic.png';
-import FoundingVyominiImage from '../assets/her-story/journey-pic.png';
-import BreakingTaboosImage from '../assets/her-story/journey-pic.png';
-import EconomicEmpowermentImage from '../assets/her-story/journey-pic.png';
-import CommunityImpactImage from '../assets/her-story/journey-pic.png';
-import ConclusionImage from '../assets/her-story/journey-pic.png';
+import HeroImage from '../assets/her-story/EarlyLife.jpg';
+import EarlyLifeImage from '../assets/her-story/EarlyLife.jpg';
+import InspirationImage from '../assets/her-story/JOURNEY copy.JPG';
+import FoundingVyominiImage from '../assets/her-story/LIVLIHOOD.jpg';
+import BreakingTaboosImage from '../assets/her-story/MHM01.jpg';
+import EconomicEmpowermentImage from '../assets/her-story/WhatsApp Image 2023-09-21 at 23.02.23-3.jpeg';
+import CommunityImpactImage from '../assets/her-story/WOMEN EMPP0.jpg';
 
 // Sticky Navigator Component
 // Sticky Navigator Component
@@ -27,27 +26,25 @@ const StickyNav = ({ sections, activeSection }) => {
           <a
             key={section.id}
             href={`#${section.id}`}
-            className={`flex items-center justify-end satoshi-medium transition-all duration-300 ${
-              activeSection === section.id
+            className={`flex items-center justify-end satoshi-medium transition-all duration-300 ${activeSection === section.id
                 ? isOnConclusion
                   ? "text-secondary text-lg" // ✅ White when active on conclusion
                   : "text-primary text-lg"
                 : isOnConclusion
-                ? "text-white/60 hover:text-white text-sm" // ✅ Faded white for inactive links
-                : "text-gray-400 hover:text-gray-600 text-sm"
-            }`}
+                  ? "text-white/60 hover:text-white text-sm" // ✅ Faded white for inactive links
+                  : "text-gray-400 hover:text-gray-600 text-sm"
+              }`}
           >
             <span className="mr-2">{section.name}</span>
             <div
-              className={`h-0.5 rounded-full transition-all duration-300 ${
-                activeSection === section.id
+              className={`h-0.5 rounded-full transition-all duration-300 ${activeSection === section.id
                   ? isOnConclusion
                     ? "w-8 bg-secondary" // ✅ White active underline
                     : "w-8 bg-primary"
                   : isOnConclusion
-                  ? "w-4 bg-secondary" // ✅ White faded inactive underline
-                  : "w-4 bg-secondary"
-              }`}
+                    ? "w-4 bg-secondary" // ✅ White faded inactive underline
+                    : "w-4 bg-secondary"
+                }`}
             />
           </a>
         ))}
@@ -247,7 +244,7 @@ const HerStory = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            From humble beginnings to founding a movement for women's empowerment.
+            From Humble Beginnings to a Movement for Women’s Empowerment
           </motion.p>
         </div>
       </section>
@@ -285,10 +282,9 @@ const HerStory = () => {
               viewport={{ once: true }}
             >
               <p>
-                Ms. Prachi Kaushik was born on December 05, 1984 in Delhi, close to the Delhi-Haryana border. Being a daughter of a daily wage labourer and a housewife, she grew up in a challenging environment and saw poverty and lack of amenities at every step of her way.
-              </p>
+                Born on December 24, in Delhi near the Delhi–Haryana border, Ms. Kaushik grew up in a challenging environment as the daughter of a daily wage labourer and a homemaker. Poverty and lack of basic amenities were part of her everyday reality.</p>
               <p>
-                She completed her primary and secondary education in a government school. After her 12th standard, there was strong pressure from family and relatives to end her education and settle into an early marriage. No one expected or encouraged her to continue studying. In fact, no woman in her family had pursued higher education before.
+                She completed her primary and secondary education at a government school. After finishing 12th grade, she faced immense pressure from family and relatives to discontinue her studies and accept an early marriage. No one expected her to continue her education; in fact, no woman in her family had ever pursued higher studies.
               </p>
               <p className="satoshi-medium italic border-l-4 border-primary pl-4 py-2 my-6">
                 "For a long time, my goal was simply to exist on my own terms in a world that didn't seem to want me to."
@@ -303,10 +299,10 @@ const HerStory = () => {
             viewport={{ once: true }}
           >
             <p>
-              But, she had other plans. She resisted every expectation and objection, firmly said no to early marriage and yes to her own future. With no financial support, she started taking tuition classes to fund her college education. She graduated with a degree in Political Science from Rajdhani College, Delhi, and later pursued her Master's through the Faculty of Open Learning at Delhi University.
+              But she had other plans. Defying expectations, she firmly said no to early marriage and yes to her future. With no financial backing, she began offering tuition classes to fund her college education. She earned a degree in Political Science from Rajdhani College, Delhi, and later completed her Master’s through the Faculty of Open Learning at Delhi University.
             </p>
             <p>
-              As the eldest sibling, the burden of supporting her family also fell on her shoulders. After college, though she dreamed of pursuing UPSC or even a PhD, financial responsibilities pulled her into the workforce. She took up jobs to support her younger siblings' education while continuing her own studies whenever possible.
+              As the eldest sibling, she also carried the responsibility of supporting her family. Though she aspired to pursue UPSC or even a PhD, financial constraints led her to join the workforce after graduation. While working, she continued to support her younger siblings’ education and pursued her own learning whenever possible.
             </p>
           </motion.div>
         </div>
@@ -345,16 +341,16 @@ const HerStory = () => {
               viewport={{ once: true }}
             >
               <p>
-                Survival had been her only inspiration. Looking for ways to move forward, she started working in an NGO. This is when she encountered a domestic violence case that deeply disturbed her.
+                Survival had always been her only inspiration. Looking for ways to move forward, she started working with an NGO, where she encountered a domestic violence case that deeply disturbed her.
               </p>
               <p>
-                This situation changed her goal from survival to transformation not just her life but of others like her who become prey of societal misdeeds. She began to see the systemic issues that trapped women in cycles of vulnerability.
+                This moment became a turning point. It shifted her focus from simply surviving to transforming not only her own life but also the lives of countless other women who, like her, fell prey to societal injustices. She began to recognize the systemic issues that trapped women in cycles of vulnerability.
               </p>
               <p className="satoshi-medium">
-                She observed that when a woman has no financial support, when she's denied education and exposure, she becomes more vulnerable to exploitation and abuse. That experience became her mission.
+                She realized that when a woman is denied education, financial independence, and exposure, she becomes more vulnerable to exploitation and abuse. That realization became her mission.
               </p>
               <p>
-                She chose to focus on two critical areas: women's health and economic empowerment. This pivotal moment shifted her path from personal survival to creating systemic change for countless other women.
+                She chose to focus on two critical areas: women's health and economic empowerment. This decision marked her journey from personal survival to creating systemic change.
               </p>
             </motion.div>
           </div>
@@ -364,63 +360,63 @@ const HerStory = () => {
       {/* Founding Vyomini */}
       <div className='bg-secondary'>
         <section
-        id="founding-vyomini"
-        ref={sectionRefs['founding-vyomini']}
-        className="h-screen py-16 md:py-20 px-4 md:px-8 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
-      >
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            title="Founding Vyomini"
-            subtitle="The philosophy of sustainability through enterprise"
-          />
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
+          id="founding-vyomini"
+          ref={sectionRefs['founding-vyomini']}
+          className="h-screen py-16 md:py-20 px-4 md:px-8 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
+        >
+          <div className="max-w-6xl mx-auto">
+            <SectionHeader
+              title="Founding Vyomini"
+              subtitle="The philosophy of sustainability through enterprise"
+            />
+            <div className="flex flex-col lg:flex-row gap-12 items-center">
+              <motion.div
+                className="w-full lg:w-2/5"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}
+              >
+                <img
+                  src={FoundingVyominiImage}
+                  alt="Founding Vyomini Social Enterprise"
+                  className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                />
+              </motion.div>
+              <motion.div
+                className="w-full lg:w-3/5 prose prose-lg max-w-none satoshi-regular text-gray-700"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <p>
+                  In 2015, Prachi considered appearing for the UPSC exams. By then, she had only one attempt left due to age restrictions. After completing it, she realized that if she truly wanted to reach more people and bring meaningful change, she needed a different path.
+                </p>
+                <p>
+                  That’s when she decided to create something of her own, an initiative that would allow her to work closely with communities, empower others, and scale her impact.
+                </p>
+                <p className="satoshi-medium italic border-l-4 border-primary pl-4 py-2 my-6">
+                  "The organization focuses on creating products, promoting grassroots entrepreneurship, and fostering a circular economy to ensure that communities can earn and grow through their own efforts."
+                </p>
+              </motion.div>
+            </div>
             <motion.div
-              className="w-full lg:w-2/5"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-            >
-              <img
-                src={FoundingVyominiImage}
-                alt="Founding Vyomini Social Enterprise"
-                className="w-full h-80 object-cover rounded-2xl shadow-lg"
-              />
-            </motion.div>
-            <motion.div
-              className="w-full lg:w-3/5 prose prose-lg max-w-none satoshi-regular text-gray-700"
+              className="prose prose-lg max-w-none satoshi-regular text-gray-700 mt-8"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
               <p>
-                In 2015, she considered appearing for the UPSC exams. Until then, circumstances hadn't allowed her to think in that direction. But once the situation improved, she decided to give it a shot. By then, she was eligible for just one attempt due to age criteria.
+                In 2017, she left her government sector job and founded Vyomini Social Foundation (also known as Vyomini Social Enterprise). Unlike conventional NGOs that rely heavily on grants, Vyomini was built on the idea of sustainability through enterprise.
               </p>
               <p>
-                However, after completing that one attempt, she realized if she truly wanted to reach more people and bring meaningful change, she would have to take a different path. That's when she decided to create something of her own that would allow her to work closely with communities, empower others, and scale her impact.
-              </p>
-              <p className="satoshi-medium italic border-l-4 border-primary pl-4 py-2 my-6">
-                "The organization focuses on creating products, promoting grassroots entrepreneurship, and fostering a circular economy to ensure that communities can earn and grow through their own efforts."
+                Vyomini is a purpose-driven initiative aimed at building a strong ecosystem for women-led entrepreneurship and leadership in high-impact sectors such as clean energy, sustainable agriculture, nutrition, health, and sanitation. The foundation actively supports women from low-income, climate-vulnerable communities across ten states in India. Through its programs, Vyomini inspires, educates, and nurtures socially conscious women entrepreneurs.
               </p>
             </motion.div>
           </div>
-          <motion.div
-            className="prose prose-lg max-w-none satoshi-regular text-gray-700 mt-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <p>
-              In 2017, she left her government sector job and founded Vyomini Social Foundation, also known as Vivomni Social Enterprise. Unlike conventional NGOs that rely heavily on grants, Vyomini was built on the idea of sustainability through enterprise.
-            </p>
-            <p>
-              Vyomini is a purpose-driven initiative aimed at building a strong ecosystem for women-led entrepreneurship and leadership in emerging, high-impact sectors such as clean energy, sustainable agriculture, nutrition, health, and sanitation. The foundation actively supports women from low-income, climate-vulnerable communities across ten states in India. Through its programs, Vyomini inspires, educates, and nurtures socially conscious women entrepreneurs.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+        </section>
       </div>
 
       {/* Breaking Taboos */}
@@ -456,10 +452,13 @@ const HerStory = () => {
               viewport={{ once: true }}
             >
               <p>
-                The first project launched by VYOMINI was 'Menstrual Health Management program' at Jhajjar District of Haryana and Delhi Slums with a 360-degree approach with 3As that is Awareness, Accessibility and Affordability of the MHM.
+                Vyomini’s first project was the Menstrual Health Management (MHM) program, launched in Jhajjar district of Haryana and in Delhi’s slums. It was designed with a 360-degree approach, the 3As: Awareness, Accessibility, and Affordability.
               </p>
               <p>
-                She started speaking, researching, and educating women about their bodies, their rights, and the importance of menstrual hygiene. She travelled to villages across the country and reached over 25 lakhs women under the MHM program. She conducted awareness sessions in local languages and spoke directly to women, breaking cultural taboos, giving them comprehensive knowledge about menstrual hygiene, sexually transmitted infections, reproductive tract infections, HIV-Aids awareness, family planning, and more.
+                Prachi began speaking, researching, and educating women about their bodies, rights, and the importance of menstrual hygiene. She travelled to villages across India, directly engaging with women in local languages. To date, she has reached over 25 lakh women through the MHM program.
+              </p>
+              <p>
+                Her workshops provided comprehensive knowledge on menstrual hygiene, sexually transmitted infections, reproductive tract infections, HIV/AIDS awareness, family planning, and more, breaking cultural taboos that had silenced women for generations.
               </p>
             </motion.div>
           </div>
@@ -471,10 +470,10 @@ const HerStory = () => {
             viewport={{ once: true }}
           >
             <p>
-              Till now, she has conducted over 15,000 menstrual health awareness workshops in rural and urban communities including Haryana, Odisha, Rajasthan, Jharkhand, Bihar, Uttarakhand, Uttar Pradesh and more 15 states in India.
+              So far, she has conducted more than 15,000 menstrual health awareness workshops across rural and urban communities in states including Haryana, Odisha, Rajasthan, Jharkhand, Bihar, Uttarakhand, and Uttar Pradesh.
             </p>
             <p className="satoshi-medium">
-              Her research revealed that modern society had twisted ancient practices into superstition. In Vedic times, menstruating women were encouraged to slow down and focus inward, not shamed or isolated.
+              Her research revealed that modern society had twisted ancient practices into superstition. In Vedic times, menstruating women were encouraged to rest and turn inward, not shamed or isolated.
             </p>
           </motion.div>
         </div>
@@ -483,63 +482,47 @@ const HerStory = () => {
       {/* Economic Empowerment */}
       <div className='bg-secondary'>
         <section
-        id="economic-empowerment"
-        ref={sectionRefs['economic-empowerment']}
-        className="h-screen py-16 md:py-20 px-4 md:px-8 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
-      >
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            title="Economic Empowerment"
-            subtitle="The philosophy of sustainability through enterprise"
-          />
-          <div className="flex flex-col lg:flex-row gap-12 items-center">
-            <motion.div
-              className="w-full lg:w-2/5"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.7 }}
-              viewport={{ once: true }}
-            >
-              <img
-                src={FoundingVyominiImage}
-                alt="Founding Vyomini Social Enterprise"
-                className="w-full h-80 object-cover rounded-2xl shadow-lg"
-              />
-            </motion.div>
-            <motion.div
-              className="w-full lg:w-3/5 prose prose-lg max-w-none satoshi-regular text-gray-700"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <p>
-                In 2015, she considered appearing for the UPSC exams. Until then, circumstances hadn't allowed her to think in that direction. But once the situation improved, she decided to give it a shot. By then, she was eligible for just one attempt due to age criteria.
-              </p>
-              <p>
-                However, after completing that one attempt, she realized if she truly wanted to reach more people and bring meaningful change, she would have to take a different path. That's when she decided to create something of her own that would allow her to work closely with communities, empower others, and scale her impact.
-              </p>
-              <p className="satoshi-medium italic border-l-4 border-primary pl-4 py-2 my-6">
-                "The organization focuses on creating products, promoting grassroots entrepreneurship, and fostering a circular economy to ensure that communities can earn and grow through their own efforts."
-              </p>
-            </motion.div>
+          id="economic-empowerment"
+          ref={sectionRefs['economic-empowerment']}
+          className="h-screen py-16 md:py-20 px-4 md:px-8 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
+        >
+          <div className="max-w-6xl mx-auto">
+            <SectionHeader
+              title="Economic Empowerment"
+              subtitle="Building livelihoods through women-led enterprises"
+            />
+            <div className="flex flex-col lg:flex-row gap-12 items-center">
+              <motion.div
+                className="w-full lg:w-2/5"
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.7 }}
+                viewport={{ once: true }}
+              >
+                <img
+                  src={EconomicEmpowermentImage}
+                  alt="Founding Vyomini Social Enterprise"
+                  className="w-full h-80 object-cover rounded-2xl shadow-lg"
+                />
+              </motion.div>
+              <motion.div
+                className="w-full lg:w-3/5 prose prose-lg max-w-none satoshi-regular text-gray-700"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                viewport={{ once: true }}
+              >
+                <p>
+                  Vyomini doesn’t just stop at health. Its philosophy is rooted in sustainability through enterprise. By promoting women-led entrepreneurship, Vyomini empowers women to generate income, build confidence, and reclaim agency over their lives.
+                </p>
+                <p>
+                  The initiative has created over 10,000 women entrepreneurs across diverse sectors. By fostering a circular economy, it ensures that communities grow through their own efforts rather than depend solely on external aid.
+                </p>
+              </motion.div>
+            </div>
+          
           </div>
-          <motion.div
-            className="prose prose-lg max-w-none satoshi-regular text-gray-700 mt-8"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <p>
-              In 2017, she left her government sector job and founded Vyomini Social Foundation, also known as Vivomni Social Enterprise. Unlike conventional NGOs that rely heavily on grants, Vyomini was built on the idea of sustainability through enterprise.
-            </p>
-            <p>
-              Vyomini is a purpose-driven initiative aimed at building a strong ecosystem for women-led entrepreneurship and leadership in emerging, high-impact sectors such as clean energy, sustainable agriculture, nutrition, health, and sanitation. The foundation actively supports women from low-income, climate-vulnerable communities across ten states in India. Through its programs, Vyomini inspires, educates, and nurtures socially conscious women entrepreneurs.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+        </section>
       </div>
 
       {/* Community Impact */}
@@ -575,17 +558,17 @@ const HerStory = () => {
               viewport={{ once: true }}
             >
               <p>
-                Ms. Prachi has been raising awareness and empowering communities through Vyomini Facilitation Centre for Social Security Schemes. This centre aims to bridge the gap between marginalized individuals and essential government welfare schemes.
+                Prachi has also been driving community development through the Vyomini Facilitation Centre for Social Security Schemes, which connects marginalized individuals with essential government welfare programs.
               </p>
               <p>
-                She has been instrumental in organizing health camps and offering monthly medical consultations in collaboration with gynaecologists. During her training sessions, she conducted both pre- and post-assessments to identify common health concerns in the community. If recurring infections or specific health problems were found during the post-assessments in women, she organizes gynaecology camps to meet those needs.
+                She regularly organizes health camps and monthly medical consultations in collaboration with gynecologists. During training sessions, she conducts pre- and post-assessments to identify common health issues. If recurring problems are detected, she organizes special gynecology camps to address them.
               </p>
               <p>
-                Over the past 10 years, Ms. Prachi has consistently organized two to three health camps every month, totalling over 400 camps to date. Each of these camps typically serves between 400 to 500 women, and at times, even up to 1,000.
+                Over the last decade, she has consistently organized two to three health camps every month, amounting to 400+ camps. Each camp typically serves between 400–500 women, and sometimes even up to 1,000.
               </p>
             </motion.div>
           </div>
-          
+
           {/* Impact Statistics within Community Impact Section */}
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12"
@@ -658,7 +641,7 @@ const HerStory = () => {
           </motion.div>
         </div>
       </section>
-        <Footer />
+      <Footer />
     </div>
   );
 };

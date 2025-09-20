@@ -38,12 +38,21 @@ const EconomicEmpowerment = ({ sectionRef }) => {
           >
             <div className="prose prose-lg max-w-none satoshi-regular text-gray-700 space-y-6">
               <p>
-                We've trained over 10,000 women and created 5,500+ successful entrepreneurs through our incubation centers 
-                and training programs. Our approach focuses on practical, market-ready skills that generate immediate income.
+                Through incubation centres and training programs, Vyomini has trained over 10,000 women and helped establish 5,500+ successful entrepreneurs. Our approach focuses on practical, market-ready skills that generate immediate income and long-term stability.
               </p>
+              <div>
+                <p className="font-medium mb-2">Key programs include:</p>
+                <ul className="list-disc list-inside space-y-1 pl-4">
+                  <li>Sanitary napkin manufacturing</li>
+                  <li>Designer jute products</li>
+                  <li>Cloth and paper bag production</li>
+                  <li>Paper recycling initiatives</li>
+                  <li>Digital marketing training</li>
+                  <li>Handicraft production</li>
+                </ul>
+              </div>
               <p>
-                Programs include sanitary napkin manufacturing, designer jute products, cloth bags, paper recycling, 
-                digital marketing, and handicraft training. Each venture typically breaks even within 3-4 months.
+                Each venture typically breaks even within 3-4 months.
               </p>
               <div className="bg-primary/5 p-6 rounded-xl">
                 <h4 className="satoshi-bold text-primary mb-2">Vyomini Udhvami Consortium</h4>

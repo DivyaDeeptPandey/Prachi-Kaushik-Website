@@ -25,16 +25,13 @@ const VyominiModel = ({ sectionRef }) => {
             <h3 className="satoshi-bold text-2xl text-primary mb-6">Our Philosophy</h3>
             <div className="prose prose-lg max-w-none satoshi-regular text-gray-700 space-y-6">
               <p>
-                Unlike conventional NGOs that rely heavily on grants, Vyomini was built on the idea of sustainability through enterprise. 
-                We focus on creating products, promoting grassroots entrepreneurship, and fostering a circular economy to ensure that 
-                communities can earn and grow through their own efforts.
+                Unlike conventional NGOs that rely heavily on grants, Vyomini was founded on the principle of sustainability through enterprise. We focus on creating products, promoting grassroots entrepreneurship, and fostering a circular economy, enabling communities to earn, grow, and thrive through their own efforts.
               </p>
               <p className="satoshi-medium italic border-l-4 border-primary pl-4 py-2">
                 "We don't give fish, we teach fishing - and then we help build the fishing industry."
               </p>
               <p>
-                Our model ensures that every initiative is self-sustaining, scalable, and community-owned, creating lasting impact 
-                that continues to grow long after our direct involvement.
+                Our model ensures that every initiative is self-sustaining, scalable, and community-owned, creating long-term impact that continues to grow even after our direct involvement.
               </p>
             </div>
           </motion.div>
@@ -49,10 +46,10 @@ const VyominiModel = ({ sectionRef }) => {
             <h4 className="satoshi-bold text-xl text-primary mb-6">Our Approach</h4>
             <div className="space-y-4">
               {[
-                { title: 'Awareness', desc: 'Educating communities about their rights and opportunities' },
-                { title: 'Accessibility', desc: 'Making resources and opportunities available to all' },
-                { title: 'Affordability', desc: 'Ensuring solutions are economically viable' },
-                { title: 'Sustainability', desc: 'Building programs that continue without external support' }
+                { title: 'Awareness', desc: 'Educating communities about their rights, health, and opportunities.' },
+                { title: 'Accessibility', desc: 'Ensuring resources, products, and opportunities reach everyone' },
+                { title: 'Affordability', desc: 'Designing solutions that are economically viable for all.' },
+                { title: 'Sustainability', desc: 'Building programs that continue independently without external dependency' }
               ].map((item, index) => (
                 <div key={item.title} className="flex items-start space-x-4">
                   <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0">

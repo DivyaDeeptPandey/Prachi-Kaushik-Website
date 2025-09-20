@@ -42,7 +42,7 @@ const WatchTheJourney = () => {
         {/* Video Container - Direct Iframe */}
         <motion.div
           className="rounded-lg overflow-hidden mx-auto"
-          style={{ maxWidth: '1080px' }}
+          style={{ maxWidth: '720px' }}
           initial={{ opacity: 0, scale: 0.98 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.3 }}

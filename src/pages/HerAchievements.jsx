@@ -6,10 +6,10 @@ import Footer from '../components/Footer';
 
 import img1 from '../assets/awards/scroll-pic1.jpg';
 import img2 from '../assets/awards/scroll-pic1.jpg';
-import img3 from '../assets/awards/scroll-pic1.jpg';
+import img3 from '../assets/awards/53323356_822993318048018_8773743481278431232_n.jpg';
 import img4 from '../assets/awards/scroll-pic1.jpg';
-import img5 from '../assets/awards/scroll-pic1.jpg';
-import img6 from '../assets/awards/scroll-pic1.jpg';
+import img5 from '../assets/awards/WhatsApp Image 2025-09-20 at 13.32.29_9e3a9faf.jpg';
+import img6 from '../assets/awards/498240778_2553430855004247_7248568481183000218_n.jpg';
 
 const Awards = () => {
   const location = useLocation();
@@ -19,7 +19,7 @@ const Awards = () => {
       title: "Women Transforming India Award",
       organization: "NITI Aayog",
       year: "2023",
-      description: "Prachi Kaushik was honored as one of 75 extraordinary women from across India who are driving transformative change in their communities. This prestigious award recognizes her outstanding contributions to social change and women's empowerment through Vyomini Social Enterprise. The selection was made from thousands of nominations nationwide, highlighting her innovative approach to combining sustainable business models with profound social impact. The award ceremony was attended by government officials, industry leaders, and social change makers, celebrating her work in menstrual health awareness, economic empowerment, and grassroots development.",
+      description: "Prachi Kaushik was honoured as one of 75 extraordinary women from across India driving transformative change in their communities. Selected from thousands of nominations nationwide, this prestigious award recognizes her innovative approach of combining sustainable business models with deep social impact. The award celebrated her pioneering work in menstrual health awareness, economic empowerment, and grassroots development, positioning her as a changemaker in the field of women’s empowerment.",
       image: img1,
       link: "#",
       category: "National"
@@ -29,18 +29,18 @@ const Awards = () => {
       title: "Rex Karamveer Global Fellowship & Chakra Award",
       organization: "International Confederation of NGOs with United Nations",
       year: "2023",
-      description: "This international recognition was awarded for exceptional social entrepreneurship and unwavering commitment to women's empowerment. The Rex Karamveer Award acknowledges Prachi's groundbreaking work in menstrual health and economic independence, particularly her innovative approach to breaking taboos around menstruation while creating sustainable livelihood opportunities. The award celebrates her vision of transforming rural women from beneficiaries to entrepreneurs, creating a ripple effect of empowerment across communities. The global fellowship provides a platform to share her model with international development organizations and scale impact across borders.",
+      description: "This global recognition was awarded for exceptional social entrepreneurship and an unwavering commitment to women’s empowerment. The award honours Prachi’s groundbreaking work in breaking taboos around menstruation while creating sustainable livelihood opportunities for women. It also acknowledges her vision of transforming rural women from beneficiaries into entrepreneurs, sparking a ripple effect of empowerment across communities. The fellowship provides her with a platform to share Vyomini’s model with international development organizations and expand its impact across borders.",
       image: img2,
       link: "#",
       category: "International"
     },
     {
       id: "brics-award",
-      title: "BRICS Chamber of Commerce Award",
-      organization: "BRICS CCI",
+      title: "Women of Substance",
+      organization: "BRICS Chamber of Commerce",
       year: "2023",
-      description: "Awarded for exceptional contributions to women's economic empowerment and innovative approaches to social entrepreneurship within the BRICS nations framework. This international recognition highlights the potential for replicating Vyomini's model across developing economies. The award committee praised the sustainable nature of the enterprise and its alignment with the UN Sustainable Development Goals. The recognition comes with opportunities for cross-border collaborations and knowledge exchange with social entrepreneurs from Brazil, Russia, India, China, and South Africa, creating pathways for global impact.",
-      image: img4,
+      description: "Awarded for outstanding contributions to women’s economic empowerment and innovative social entrepreneurship within the BRICS nations framework. The recognition highlights the potential to replicate Vyomini’s model across developing economies and aligns with the UN Sustainable Development Goals (SDGs). The award committee praised Vyomini’s sustainable approach and its global relevance. This honour also opens opportunities for cross-border collaborations and knowledge exchange with social entrepreneurs from Brazil, Russia, India, China, and South Africa — paving the way for global impact.",
+      image: img3,
       link: "#",
       category: "International"
     },
@@ -49,11 +49,122 @@ const Awards = () => {
       title: "BW Businessworld Women Social Entrepreneur of the Year",
       organization: "Businessworld",
       year: "2024",
-      description: "Recognized for outstanding leadership in social entrepreneurship and transformative work in creating women entrepreneurs across rural India. This award celebrates Prachi's ability to bridge the gap between social impact and business sustainability. The selection committee highlighted her innovative training programs, market linkage initiatives, and the creation of a supportive ecosystem for women entrepreneurs. The award also acknowledges her role in mentoring the next generation of social entrepreneurs and her contributions to policy discussions around women's economic empowerment at national forums.",
-      image: img3,
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
       link: "#",
       category: "National"
-    }
+    },
+    {
+      id: "bw-award",
+      title: "Abhaya Bravery Award",
+      organization: "Businessworld",
+      year: "2025",
+      description: "The Abhaya Bravery Award Ceremony 2025 was held on 7th March at the Alliance Française de Bangalore, celebrating acts of extraordinary courage and resilience. The event also marked the launch of a significant movement aimed at creating a safer, more equitable society — the Rape-Free India campaign by Team Abhaya.",
+      image: img5,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "Mahila Shiromani Samman",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img6,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "Women Social Enterprenour of The Year",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "Phenomenal She",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "Women Leader Award",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "Best Social Enterprise",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "Women Excellence and Leadership Award",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },  
+    {
+      id: "bw-award",
+      title: "Social Women of The Year",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "Women Excellence Award",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "Womenennovator",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },
+    {
+      id: "bw-award",
+      title: "TedX Speaker",
+      organization: "Businessworld",
+      year: "2024",
+      description: "Recognized for outstanding leadership in social entrepreneurship, Prachi was celebrated for her transformative work in creating women entrepreneurs across rural India. The award commended her innovative training programs, market-linkage initiatives, and the creation of a supportive ecosystem for women-led enterprises. It also highlighted her role in mentoring emerging social entrepreneurs and contributing to policy discussions on women’s economic empowerment at national forums.",
+      image: img4,
+      link: "#",
+      category: "National"
+    },
+
   ];
 
   // Create refs for each award section
@@ -152,48 +263,6 @@ const Awards = () => {
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-16 md:py-20 px-4 md:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="text-center"
-          >
-            <h2 className="satoshi-bold text-3xl md:text-4xl text-primary mb-12">
-              Impact Behind the Awards
-            </h2>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { number: "6", label: "National Awards" },
-                { number: "2", label: "International Honors" },
-                { number: "25+", label: "Media Features" },
-                { number: "50+", label: "Speaking Engagements" }
-              ].map((stat, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="text-center"
-                >
-                  <div className="satoshi-bold text-4xl md:text-5xl text-primary mb-2">
-                    {stat.number}
-                  </div>
-                  <div className="satoshi-regular text-gray-600 text-sm">
-                    {stat.label}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
         </div>
       </section>
 

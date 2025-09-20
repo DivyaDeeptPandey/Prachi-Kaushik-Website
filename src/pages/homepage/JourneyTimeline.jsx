@@ -3,12 +3,13 @@ import { motion, useScroll } from "framer-motion";
 import { Link } from "react-router-dom";
 
 // Import your timeline images
-import HumbleBeginningImg from "../../assets/timeline/timeline.png";
-import EducationImg from "../../assets/timeline/timeline.png";
-import AwakeningImg from "../../assets/timeline/timeline.png";
-import FoundingVyominiImg from "../../assets/timeline/timeline.png";
-import NationalImpactImg from "../../assets/timeline/timeline.png";
-import GlobalRecognitionImg from "../../assets/timeline/timeline.png";
+import HumbleBeginningImg from "../../assets/timeline/JOURNEYY.jpg";
+import EducationImg from "../../assets/timeline/JOURNEy09.jpg";
+import AwakeningImg from "../../assets/timeline/JOURNEY 1.jpg";
+import FoundingVyominiImg from "../../assets/timeline/journay par 22.jpg";
+import NationalImpactImg from "../../assets/timeline/WhatsApp Image 2018-07-31 at 02.24.42(2).jpeg";
+import GlobalRecognitionImg from "../../assets/timeline/79095275_1030580017289346_703290457949470720_n.jpg";
+import NationalRecognitionImg from "../../assets/timeline/NITI AYOG POST.jpg"
 
 const VisualJourneyTimeline = () => {
   const containerRef = useRef(null);
@@ -33,7 +34,7 @@ const VisualJourneyTimeline = () => {
       year: "2000s",
       title: "Education Against All Odds",
       description:
-        "Resisted family pressure for early marriage, took tuition classes to fund college education.",
+        "She resisted family pressure for early marriage, took tuition classes to fund college education.",
       image: EducationImg,
       quote: "Education wasn't a privilege for me; it was my rebellion.",
       link: "/her-story#education",
@@ -42,7 +43,7 @@ const VisualJourneyTimeline = () => {
       year: "2011",
       title: "Government Service & Awakening",
       description:
-        "Joined Women and Child Development Department Delhi. Discovered implementation gaps in government schemes.",
+        "Prachi joined the Women and Child Development Department in Delhi, where she witnessed first-hand the gaps in implementing government schemes.",
       image: AwakeningImg,
       quote:
         "I saw that policies without people's participation remain just beautiful documents.",
@@ -52,7 +53,7 @@ const VisualJourneyTimeline = () => {
       year: "2015",
       title: "The Turning Point",
       description:
-        "Encountered a domestic violence case that shifted focus from survival to transformation.",
+        "An encounter with a domestic violence case shifted her mission — from survival to transformation — inspiring her to address systemic issues affecting women’s lives.",
       image: FoundingVyominiImg,
       quote:
         "That moment taught me that empowerment without economic freedom is incomplete.",
@@ -62,7 +63,7 @@ const VisualJourneyTimeline = () => {
       year: "2017",
       title: "Founding Vyomini",
       description:
-        "Established Vyomini Social Foundation with philosophy of 'sustainability through enterprise'.",
+        "In 2017, she founded the Vyomini Social Foundation with the philosophy of sustainability through enterprise, empowering women through health and entrepreneurship.",
       image: NationalImpactImg,
       quote:
         "I wanted to build an ecosystem where women could be creators, not just receivers.",
@@ -72,7 +73,7 @@ const VisualJourneyTimeline = () => {
       year: "2018-2023",
       title: "National Impact & Scale",
       description:
-        "Launched Menstrual Health Management program, educated 2.5M+ women, created 10K+ entrepreneurs.",
+        "Through Vyomini’s Menstrual Health Management program, she has educated 2.5 million+ women and created 10,000+ women entrepreneurs across India.",
       image: GlobalRecognitionImg,
       quote:
         "Every pad we make is not just about hygiene; it's about dignity and economic freedom.",
@@ -82,8 +83,8 @@ const VisualJourneyTimeline = () => {
       year: "2024",
       title: "National Recognition",
       description:
-        "Received Women Transforming India Award by NITI Aayog, Social Entrepreneur of the Year.",
-      image: GlobalRecognitionImg,
+        "Prachi has been honoured with the Women Transforming India Award by NITI Aayog and recognized as a Social Entrepreneur of the Year.",
+      image: NationalRecognitionImg,
       quote:
         "The awards are not mine; they belong to every woman who dared to dream with me.",
       link: "/achievements",
@@ -140,7 +141,7 @@ const VisualJourneyTimeline = () => {
                 <h2 className="satoshi-bold text-4xl md:text-5xl text-primary mb-6">
                   The Journey
                 </h2>
-                <p className="satoshi-medium text-xl text-gray-700 mb-8">
+                <p className="satoshi-medium text-x l text-gray-700 mb-8">
                   From humble beginnings to national recognition - a timeline of
                   resilience and transformation
                 </p>
@@ -157,10 +158,10 @@ const VisualJourneyTimeline = () => {
                           );
                           element?.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
                         }}
-                        className={`text-left satoshi-medium text-lg transition-colors duration-300 p-2 rounded-lg ${
+                        className={`text-left satoshi-medium text-l transition-colors duration-300 p-2 rounded-lg ${
                           index === activeIndex
                             ? "bg-primary text-secondary"
-                            : "text-gray-600 hover:text-primary hover:bg-primary/10"
+                            : "text-gray-600 hover:text-primary hover:bg-primary-10"
                         }`}
                       >
                         {milestone.year} - {milestone.title}
@@ -197,7 +198,7 @@ const VisualJourneyTimeline = () => {
                     </div>
 
                     {/* Card */}
-                    <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300">
+                    <div className="bg-white rounded-xl shadow-2xl p-6">
                       {/* Year */}
                       <div className="satoshi-bold text-primary text-lg mb-2">
                         {milestone.year}
@@ -209,11 +210,11 @@ const VisualJourneyTimeline = () => {
                       </h3>
 
                       {/* Image */}
-                      <div className="mb-4 rounded-lg overflow-hidden">
+                      <div className="aspect-[15/9] mb-4 rounded-lg overflow-hidden">
                         <img
                           src={milestone.image}
                           alt={milestone.title}
-                          className="w-full h-78 object-cover"
+                          className="w-full h-full object-cover"
                         />
                       </div>
 
@@ -225,7 +226,7 @@ const VisualJourneyTimeline = () => {
                       )}
 
                       {/* Description */}
-                      <p className="satoshi-regular text-gray-700 text-xl mb-4 leading-relaxed">
+                      <p className="satoshi-regular text-gray-700 text-l mb-4 leading-relaxed">
                         {milestone.description}
                       </p>
 
