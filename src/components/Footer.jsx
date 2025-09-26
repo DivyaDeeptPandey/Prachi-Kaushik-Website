@@ -47,20 +47,20 @@ const Footer = () => {
             <p className="satoshi-regular text-text text-base mb-6 leading-relaxed">
               Empowering women through menstrual health awareness, economic independence, and grassroots development.
             </p>
-            <div className="flex items-center satoshi-regular text-text text-sm mb-3">
+            <div className="flex text-center w-screen items-center align-center satoshi-regular  text-sm mb-3">
               <FaMapMarkerAlt className="text-primary mr-2 flex-shrink-0" />
-              <span>H-64 Sultan Pur Mazra, Nangloi, Delhi-110086, India</span>
+              <span>Delhi NCR, India</span>
             </div>
           </div>
 
           {/* Contact Info */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left sm:text-left">
             <h3 className="satoshi-bold text-primary text-xl mb-5">Contact Us</h3>
-            <div className="flex items-start justify-center md:justify-start">
-              <FaEnvelope className="text-primary mr-3 mt-1 flex-shrink-0" />
+            <div className="flex items-start justify-center">
+              <FaEnvelope className="text-primary  mt-1 flex-shrink-0" />
               <div>
                 <a 
-                  href="mailto:info@vyomini.org" 
+                  href="contactprachikaushik@gmail.com" 
                   className="text-primary hover:text-accent transition-colors duration-300 satoshi-medium text-lg"
                 >
                   info@vyomini.org
