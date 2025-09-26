@@ -2,18 +2,21 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Import images - you'll need to add these to your assets
-import mhmImage from '../../assets/initiatives/scroll-pic6.jpg';
 import entrepreneurshipImage from '../../assets/initiatives/scroll-pic6.jpg';
-import communityImage from '../../assets/initiatives/scroll-pic6.jpg';
+import CommunityDevelopmentImg from '../../assets/initiatives/community_dev.jpg';
+import voiceAgainstViolenceImg from '../../assets/initiatives/voice_against_voilence.jpg';
+import menstrualHealthImg from '../../assets/initiatives/menstrual_health.jpg';
+import youthEmpowermentImg from '../../assets/initiatives/youth_empowerment.jpg';
+import advocacyImage from '../../assets/initiatives/avocacy_&_policy.jpg';
 
 const InitiativesPreview = () => {
   const initiatives = [
     {
       title: "Menstrual Health & Hygiene",
       description: "Breaking taboos and ensuring access to safe, affordable sanitary products for millions of women.",
-      image: mhmImage,
+      image: menstrualHealthImg,
       link: "/initiatives#menstrual-health",
-      stats: "2.5M+ Women Educated",
+      stats: "3 M+ Women Educated",
       alt: "Prachi Kaushik conducting a menstrual health workshop with rural women"
     },
     {
@@ -21,62 +24,62 @@ const InitiativesPreview = () => {
       description: "Creating financially independent women through incubation, training, and sustainable business models.",
       image: entrepreneurshipImage,
       link: "/initiatives#economic-empowerment",
-      stats: "10K+ Entrepreneurs Created",
+      stats: "10 K+ Entrepreneurs Created",
       alt: "Prachi Kaushik training women entrepreneurs at a Vyomini incubation center"
     },
     {
       title: "Community Development",
       description: "Organizing on-ground health camps, sanitation drives, and holistic community development programs.",
-      image: communityImage,
+      image: CommunityDevelopmentImg,
       link: "/initiatives#community-development",
-      stats: "400+ Health Camps",
+      stats: "15 K+ Workshops Conducted",
       alt: "Prachi Kaushik at a community health camp with medical staff and beneficiaries"
     },
     {
       title: "Youth Empowerment",
-      description: "Organizing on-ground health camps, sanitation drives, and holistic community development programs.",
-      image: communityImage,
+      description: "Under campus connect program youth engaged in positive thinking and nation building, thorugh field activities and awareness campaigns.",
+      image: youthEmpowermentImg,
       link: "/initiatives#community-development",
-      stats: "400+ Health Camps",
+      stats: "20 K+ Youth Empowered",
       alt: "Prachi Kaushik at a community health camp with medical staff and beneficiaries"
     },
     {
-      title: "Voice against, violence against women",
-      description: "Organizing on-ground health camps, sanitation drives, and holistic community development programs.",
-      image: communityImage,
+      title: "Voice against violence",
+      description: "Legal aid , counselling and confidence building activities organised to support women facing violence.",
+      image: voiceAgainstViolenceImg,
       link: "/initiatives#community-development",
-      stats: "400+ Health Camps",
+      stats: "5,500 Women Supported",
       alt: "Prachi Kaushik at a community health camp with medical staff and beneficiaries"
     },
     {
-      title: "Community Development",
-      description: "Organizing on-ground health camps, sanitation drives, and holistic community development programs.",
-      image: communityImage,
+      title: "Advocacy and policy changes",
+      description: "Events and conference organized to make policies, people friendly with concerned stakeholders",
+      image: advocacyImage,
       link: "/initiatives#community-development",
-      stats: "400+ Health Camps",
+      stats: "50 Seminars Organized",
       alt: "Prachi Kaushik at a community health camp with medical staff and beneficiaries"
     }
   ];
 
   return (
-
-    <div className='bg-secondary'>
-      <section className="bg-white rounded-tr-[8rem] rounded-br-[8rem] py-16 md:py-20 px-4 md:px-8">
-        <div className="max-w-6xl mx-auto">
+    <div className="bg-secondary">
+      <section className="bg-white rounded-tr-[4rem] md:rounded-tr-[8rem] rounded-br-[4rem] md:rounded-br-[8rem] py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8">
+        <div className="max-w-7xl mx-auto">
           <div
-            className="h-1 bg-primary rounded-full mx-auto mb-4"
-            style={{ width: 'clamp(4rem, 10vw, 6rem)' }}
+            className="h-1 bg-primary rounded-full mx-auto mb-6"
+            style={{ width: 'clamp(3rem, 8vw, 6rem)' }}
           ></div>
+
           {/* Section Header */}
           <motion.div
-            className="text-center mb-6"
+            className="text-center mb-10"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true, margin: "-50px" }}
           >
             <motion.h2
-              className="satoshi-bold text-heading-md md:text-5xl text-primary mb-4"
+              className="satoshi-bold text-2xl sm:text-3xl md:text-4xl text-primary mb-4"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -86,7 +89,7 @@ const InitiativesPreview = () => {
             </motion.h2>
 
             <motion.p
-              className="satoshi-medium text-gray-600 text-lg max-w-3xl mx-auto"
+              className="satoshi-medium text-gray-600 text-base sm:text-lg md:text-xl max-w-3xl mx-auto px-2"
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -97,19 +100,19 @@ const InitiativesPreview = () => {
           </motion.div>
 
           {/* Initiatives Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6 lg:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
             {initiatives.map((initiative, index) => (
               <motion.div
                 key={initiative.title}
-                className="bg-secondary border-b-5 border-primary rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
+                className="bg-secondary border-b-4 border-primary rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col h-full group"
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ y: -5 }}
               >
-                {/* Image - Most important for credibility */}
-                <div className="relative overflow-hidden h-48">
+                {/* Image */}
+                <div className="relative overflow-hidden h-40 sm:h-48 md:h-56">
                   <img
                     src={initiative.image}
                     alt={initiative.alt}
@@ -118,30 +121,28 @@ const InitiativesPreview = () => {
                 </div>
 
                 {/* Content */}
-                <div className="p-4 md:p-6 flex flex-col flex-grow">
-                  {/* Title */}
-                  <h3 className="satoshi-bold text-xl md:text-2xl text-primary mb-4">
+                <div className="p-4 sm:p-5 md:p-6 flex flex-col flex-grow">
+                  <h3 className="satoshi-bold text-lg sm:text-xl md:text-2xl text-primary mb-3">
                     {initiative.title}
                   </h3>
 
-                  {/* Description */}
-                  <p className="satoshi-regular text-gray-600 mb-6 flex-grow">
+                  <p className="satoshi-regular text-gray-600 mb-4 sm:mb-6 flex-grow text-sm sm:text-base">
                     {initiative.description}
                   </p>
-                  <div className='border-t-2 w-full border-primary mb-5'></div>
-                  {/* Stats */}
-                  <div className="mb-6">
-                    <p className="satoshi-medium text-primary text-sm md:text-base">
+
+                  <div className="border-t-2 w-full border-primary mb-4 sm:mb-5"></div>
+
+                  <div className="mb-4 sm:mb-6">
+                    <p className="satoshi-medium text-primary text-xs sm:text-sm md:text-base">
                       {initiative.stats}
                     </p>
                   </div>
-
-                  {/* Learn More Button */}
+                  {/* disabled learn more button for now
                   <a
                     href={initiative.link}
-                    className="mt-auto w-35 inline-flex items-center satoshi-regular text-sm bg-primary text-secondary px-5 py-2.5 rounded-lg shadow-md 
+                    className="mt-auto inline-flex items-center satoshi-regular text-sm sm:text-base bg-primary text-secondary px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg shadow-md 
              transition-all duration-300 group/button
-             hover:bg-primary-20 hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
+             hover:bg-primary/90 hover:shadow-xl hover:-translate-y-0.5 active:scale-95"
                   >
                     Learn More
                     <svg
@@ -157,8 +158,7 @@ const InitiativesPreview = () => {
                         d="M9 5l7 7-7 7"
                       />
                     </svg>
-                  </a>
-
+                  </a>*/}
                 </div>
               </motion.div>
             ))}
@@ -166,7 +166,7 @@ const InitiativesPreview = () => {
 
           {/* View All CTA */}
           <motion.div
-            className="text-center mt-16"
+            className="text-center mt-12 sm:mt-14 md:mt-16"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -174,7 +174,7 @@ const InitiativesPreview = () => {
           >
             <a
               href="/initiatives"
-              className="inline-flex items-center satoshi-medium bg-primary text-secondary px-8 py-3 rounded-lg hover:bg-primary/90 transition-colors duration-300"
+              className="inline-flex items-center satoshi-medium bg-primary text-secondary px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg hover:bg-primary/90 transition-colors duration-300 text-sm sm:text-base"
             >
               Explore All Initiatives
               <svg
@@ -187,7 +187,6 @@ const InitiativesPreview = () => {
               </svg>
             </a>
           </motion.div>
-
         </div>
       </section>
     </div>

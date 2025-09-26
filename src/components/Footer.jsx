@@ -102,12 +102,25 @@ const Footer = () => {
           <p className="satoshi-regular text-text text-sm text-center md:text-left order-2 md:order-1">
             &copy; {new Date().getFullYear()} Vyomini Social Enterprise. All rights reserved.
           </p>
+          
+          <a
+            href="https://www.linkedin.com/in/divya-deept-pandey"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-600 hover:text-primary transition-colors duration-300"
+          >
+            Made by – Divya Deept Pandey
+          </a>
+
           <div className="satoshi-regular text-text text-sm flex items-center justify-center gap-1 order-1 md:order-2 mb-4 md:mb-0">
             <span>Made with</span>
             <FaHeart className="text-primary animate-pulse" />
             <span>for social change</span>
           </div>
         </div>
+
+        {/* Developer Credit */}
+        
 
       </div>
     </footer>

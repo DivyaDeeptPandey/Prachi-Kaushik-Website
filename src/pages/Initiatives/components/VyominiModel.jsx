@@ -7,7 +7,7 @@ const VyominiModel = ({ sectionRef }) => {
     <section
       id="vyomini-model"
       ref={sectionRef}
-      className="py-16 md:py-20 px-4 md:px-8 bg-white"
+      className="py-16 md:py-20 px-4 md:px-60 bg-white"
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeader

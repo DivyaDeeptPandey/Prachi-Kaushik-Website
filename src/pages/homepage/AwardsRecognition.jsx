@@ -36,7 +36,7 @@ const AwardsRecognition = () => {
       year: '2023'
     },
     { 
-      id: 'bw-award',
+      id: 'WEISA-award',
       logo: BWLogo, 
       alt: 'BW Businessworld Award',
       title: 'Women Social Entrepreneur of the Year',

@@ -124,11 +124,8 @@ const Contact = () => {
                   <div>
                     <h3 className="satoshi-medium text-lg mb-1">Phone</h3>
                     <div className="space-y-1">
-                      <a href="tel:+919716255564" className="block satoshi-regular text-gray-700 hover:text-primary transition-colors">
-                        +91 97162 55564
-                      </a>
                       <a href="tel:+919625708634" className="block satoshi-regular text-gray-700 hover:text-primary transition-colors">
-                        +91 96257 08634
+                        +91 911147023916
                       </a>
                     </div>
                   </div>
@@ -142,15 +139,14 @@ const Contact = () => {
                   <div>
                     <h3 className="satoshi-medium text-lg mb-1">Address</h3>
                     <p className="satoshi-regular text-gray-700">
-                      H-64, Sultan Pur Mazra,<br />
-                      Nangloi, Delhi-110086, India
+                      Delhi, India
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Specialized CTAs */}
+            { /* disabled quick links for now
             <div>
               <h2 className="satoshi-bold text-2xl md:text-3xl text-primary mb-6">Quick Links</h2>
               <div className="space-y-4">
@@ -175,8 +171,8 @@ const Contact = () => {
                   Access Press Kit
                 </a>
               </div>
-            </div>
-          </motion.div>
+            </div> */}
+          </motion.div> 
 
           {/* Right: Contact Form */}
           <motion.div 

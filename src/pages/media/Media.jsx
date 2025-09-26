@@ -86,39 +86,7 @@ const Media = () => {
             {renderContent()}
           </motion.div>
 
-          {/* "As Featured In" Section */}
-          {(activeFilter === 'news' || activeFilter === 'videos') && (
-            <motion.div
-              className="mt-20 pt-12 border-t border-gray-200"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-            >
-              <h3 className="satoshi-bold text-2xl md:text-3xl text-primary text-center mb-12">
-                As Featured In
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
-                {featuredMedia.map((media, index) => (
-                  <motion.div
-                    key={media.name}
-                    className="p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.4, delay: index * 0.1 }}
-                    whileHover={{ y: -5 }}
-                  >
-                    <img
-                      src={media.logo}
-                      alt={media.alt}
-                      className="w-20 h-20 object-contain mx-auto"
-                    />
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          )}
-
-          {/* Press Kit Section */}
+          { /* disabled press kit for now
           <motion.div
             className="mt-20"
             initial={{ opacity: 0, y: 20 }}
@@ -126,7 +94,7 @@ const Media = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <PressKit />
-          </motion.div>
+          </motion.div> */}
         </div>
       </section>
 

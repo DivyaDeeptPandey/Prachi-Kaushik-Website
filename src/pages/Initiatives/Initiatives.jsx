@@ -19,7 +19,6 @@ const Initiatives = () => {
     'economic-empowerment': useRef(null),
     'community-development': useRef(null),
     'partnerships': useRef(null),
-    'impact': useRef(null),
     'get-involved': useRef(null),
   };
 
@@ -54,8 +53,7 @@ const Initiatives = () => {
     { id: 'menstrual-health', name: 'Menstrual Health' },
     { id: 'economic-empowerment', name: 'Economic Empowerment' },
     { id: 'community-development', name: 'Community Development' },
-    { id: 'partnerships', name: 'Partnerships' },
-    { id: 'impact', name: 'Impact' },
+    { id: 'partnerships', name: 'Key Responsibilities' },
     { id: 'get-involved', name: 'Get Involved' },
   ];
 

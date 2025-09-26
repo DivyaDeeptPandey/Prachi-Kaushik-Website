@@ -9,20 +9,6 @@ const PressKit = () => {
       fileSize: '25.4 MB',
       downloadLink: '/press-kit/vyomini-press-kit.zip',
       includes: ['Biography', 'High-res Photos', 'Fact Sheet', 'Logo Pack']
-    },
-    {
-      title: 'Media Guidelines',
-      description: 'Brand guidelines and best practices for media coverage',
-      fileSize: '3.2 MB',
-      downloadLink: '/press-kit/media-guidelines.pdf',
-      includes: ['Brand Guidelines', 'Interview Tips', 'Talking Points']
-    },
-    {
-      title: 'Photo Gallery Pack',
-      description: 'High-resolution images for publication',
-      fileSize: '48.7 MB',
-      downloadLink: '/press-kit/photo-gallery.zip',
-      includes: ['50+ High-res Images', 'Various Categories', 'All Formats']
     }
   ];
 

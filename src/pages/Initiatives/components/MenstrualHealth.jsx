@@ -8,7 +8,7 @@ const MenstrualHealth = ({ sectionRef }) => {
     <section
       id="menstrual-health"
       ref={sectionRef}
-      className="py-16 md:py-20 px-4 md:px-8 bg-secondary rounded-tr-[8rem] rounded-bl-[8rem]"
+      className="py-16 md:py-20 px-4 md:px-60 bg-secondary rounded-tr-[8rem] rounded-bl-[8rem]"
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeader
@@ -42,11 +42,11 @@ const MenstrualHealth = ({ sectionRef }) => {
             transition={{ duration: 0.7, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <div className="bg-white p-6 rounded-2xl shadow-lg">
+            <div className="bg-white p-4 rounded-2xl shadow-lg">
               <img
                 src={MenstrualHealthImage}
                 alt="Menstrual health awareness workshop"
-                className="w-full h-64 object-cover rounded-lg mb-4"
+                className="w-full h-80 object-cover rounded-lg mb-4"
               />
               <h4 className="satoshi-bold text-lg text-primary mb-2">Rakshak Sanitary Napkins</h4>
               <p className="satoshi-regular text-gray-600 text-sm">

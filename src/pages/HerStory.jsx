@@ -12,8 +12,8 @@ import FoundingVyominiImage from '../assets/her-story/LIVLIHOOD.jpg';
 import BreakingTaboosImage from '../assets/her-story/MHM01.jpg';
 import EconomicEmpowermentImage from '../assets/her-story/WhatsApp Image 2023-09-21 at 23.02.23-3.jpeg';
 import CommunityImpactImage from '../assets/her-story/WOMEN EMPP0.jpg';
+import JoinHerMovement from '../pages/homepage/JoinHerMovement'
 
-// Sticky Navigator Component
 // Sticky Navigator Component
 const StickyNav = ({ sections, activeSection }) => {
   // Check if we are in the last section
@@ -479,14 +479,14 @@ const HerStory = () => {
         <section
           id="economic-empowerment"
           ref={sectionRefs['economic-empowerment']}
-          className="h-screen py-16 md:py-20 px-4 md:px-73 bg-white rounded-tr-[8rem] rounded-br-[8rem]"
+          className="h-screen py-16 md:py-20 px-4  bg-white rounded-tr-[8rem] rounded-br-[8rem]"
         >
           <div className="max-w-6xl mx-auto">
             <SectionHeader
               title="Economic Empowerment"
               subtitle="Building livelihoods through women-led enterprises"
             />
-            <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="flex flex-col lg:flex-row gap-8  items-center">
               <motion.div
                 className="w-full lg:w-2/5"
                 initial={{ opacity: 0, x: -20 }}
@@ -501,7 +501,7 @@ const HerStory = () => {
                 />
               </motion.div>
               <motion.div
-                className="w-full lg:w-3/5 prose prose-lg max-w-none satoshi-regular text-gray-700"
+                className="w-full lg:w-47/100 prose prose-lg satoshi-regular text-gray-700"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
@@ -592,50 +592,7 @@ const HerStory = () => {
           </motion.div>
         </div>
       </section>
-
-      {/* Conclusion & CTA */}
-      <section
-        id="conclusion"
-        ref={sectionRefs['conclusion']}
-        className="py-16 md:py-20 px-4 md:px-60 bg-primary text-secondary"
-      >
-        <div className="max-w-4xl mx-auto text-center">
-          <SectionHeader
-            title="A Journey of Transformation"
-            subtitle="From one woman's vision to a nationwide movement"
-            className="text-secondary"
-          />
-          <motion.p
-            className="satoshi-regular text-xl mb-8 max-w-2xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            Prachi Kaushik's story is a testament to the power of resilience, vision, and unwavering commitment to empowering others.
-          </motion.p>
-          <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <Link
-              to="/initiatives"
-              className="bg-secondary text-primary satoshi-medium py-3 px-60 rounded-lg text-center transition-colors duration-300 hover:bg-white"
-            >
-              Support Initiatives
-            </Link>
-            <Link
-              to="/contact"
-              className="border-2 border-secondary text-secondary satoshi-medium py-3 px-60 rounded-lg text-center transition-colors duration-300 hover:bg-white hover:text-primary"
-            >
-              Explore Ongoing Work
-            </Link>
-          </motion.div>
-        </div>
-      </section>
+      <JoinHerMovement />
       <Footer />
     </div>
   );

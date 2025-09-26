@@ -29,18 +29,6 @@ const MediaFeatures = () => {
       type: 'National Daily'
     },
     { 
-      logo: DDNewsLogo, 
-      alt: 'DD News',
-      name: 'DD News',
-      type: 'National Broadcast'
-    },
-    { 
-      logo: IndiaTodayLogo, 
-      alt: 'India Today',
-      name: 'India Today',
-      type: 'News Magazine'
-    },
-    { 
       logo: EconomicTimesLogo, 
       alt: 'Economic Times',
       name: 'Economic Times',
@@ -95,7 +83,7 @@ const MediaFeatures = () => {
           >
 
             {/* Media Logos Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 max-w-5xl mx-auto mb-16">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 max-w-5xl mx-auto mb-16">
               {mediaLogos.map((media, index) => (
                 <motion.div
                   key={index}
@@ -181,7 +169,7 @@ const MediaFeatures = () => {
             </p>
             <motion.a
               href="/contact?subject=media"
-              className="inline-block bg-primary text-secondary satoshi-medium py-3 px-8 rounded-lg text-center transition-colors duration-300 hover:bg-primary/90 text-lg"
+              className="inline-block bg-primary text-secondary satoshi-medium py-3 px-8 rounded-lg text-center transition-colors duration-300 hover:bg-primary/90 text-sm"
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.98 }}
             >

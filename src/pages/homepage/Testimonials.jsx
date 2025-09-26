@@ -7,6 +7,12 @@ import Img2 from "../../assets/testimonials/2.jpg";
 import Img3 from "../../assets/testimonials/3.jpg";
 import Img4 from "../../assets/testimonials/4.jpg";
 import Img5 from "../../assets/testimonials/5.jpg";
+import Img6 from "../../assets/testimonials/certificate.jpg";
+import Img7 from "../../assets/testimonials/7.jpg";
+import Img8 from "../../assets/testimonials/8.jpg";
+import Img9 from "../../assets/testimonials/9.jpg";
+import Img10 from "../../assets/testimonials/10.jpg";
+import Img11 from "../../assets/testimonials/11.jpg";
 
 const Recognitions = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,6 +26,12 @@ const Recognitions = () => {
     { id: 3, image: Img3 },
     { id: 4, image: Img4 },
     { id: 5, image: Img5 },
+    { id: 6, image: Img6 },
+    { id: 7, image: Img7 },
+    { id: 8, image: Img8 },
+    { id: 9, image: Img9 },
+    { id: 10, image: Img10 },
+    { id: 11, image: Img11 },
   ];
 
   const openModal = (image) => {

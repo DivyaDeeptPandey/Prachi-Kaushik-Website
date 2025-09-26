@@ -6,8 +6,8 @@ const FinalCTA = () => {
   // The four ways to contribute
   const contributionMethods = [
     {
-      title: "Become a Role Model",
-      description: "Inspire others by sharing your journey of overcoming challenges. Your story can light the path for someone else.",
+      title: "Become a Change Maker",
+      description: "Become a MHM advocate educator and trainer.",
       icon: ( 
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 14l9-5-9-5-9 5 9 5z" />
@@ -18,7 +18,7 @@ const FinalCTA = () => {
       linkText: "Share Your Influence"
     },
     {
-      title: "Join as a Trainer",
+      title: "Join Her Campaign",
       description: "Impart your valuable skills in entrepreneurship, digital literacy, or soft skills to empower women at the grassroots level.",
       icon: ( 
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -30,7 +30,7 @@ const FinalCTA = () => {
     },
     {
       title: "Share Your Story",
-      description: "Help us amplify the voices of changemakers. Nominate yourself or someone making a difference.",
+      description: "Inspire others by sharing your journey of overcoming challenges. Your story can light the path for someone else.",
       icon: ( 
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -40,7 +40,7 @@ const FinalCTA = () => {
       linkText: "Amplify Voices"
     },
     {
-      title: "Volunteer With Us",
+      title: "Volunteer",
       description: "Dedicate your time and energy to health camps, awareness drives, or training sessions. Every hour counts.",
       icon: ( 
         <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -1,15 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
-import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
-// Import your timeline images
-import HumbleBeginningImg from "../../assets/timeline/humble-beginings.jpg";
+import HumbleBeginningImg from "../../assets/timeline/humble-beginings1.jpg";
 import EducationImg from "../../assets/timeline/education.jpg";
 import AwakeningImg from "../../assets/timeline/awakening.jpg";
 import FoundingVyominiImg from "../../assets/timeline/humble-beginings.jpg";
 import NationalImpactImg from "../../assets/timeline/national-impact.jpeg";
 import GlobalRecognitionImg from "../../assets/timeline/global-recognition.jpg";
-import NationalRecognitionImg from "../../assets/timeline/national-recognition.jpg"
+import NationalRecognitionImg from "../../assets/timeline/national-recognition.jpg";
 
 const VisualJourneyTimeline = () => {
   const containerRef = useRef(null);
@@ -17,7 +16,7 @@ const VisualJourneyTimeline = () => {
 
   const milestones = [
     {
-      year: "1984",
+      year: "1985-1995",
       title: "Humble Beginnings",
       description:
         "Born in Delhi to a daily wage laborer and housewife, Prachi grew up in challenging circumstances near the Delhi-Haryana border.",
@@ -27,23 +26,23 @@ const VisualJourneyTimeline = () => {
       link: "/her-story#early-life",
     },
     {
-      year: "2000s",
+      year: "1995-2005",
       title: "Education Against All Odds",
       description:
         "She resisted family pressure for early marriage, took tuition classes to fund college education.",
       image: EducationImg,
       quote: "Education wasn't a privilege for me; it was my rebellion.",
-      link: "/her-story#education",
+      link: "/her-story#early-life",
     },
     {
-      year: "2011",
+      year: "2005-2015",
       title: "Government Service & Awakening",
       description:
         "Prachi joined the Women and Child Development Department in Delhi, where she witnessed first-hand the gaps in implementing government schemes.",
       image: AwakeningImg,
       quote:
         "I saw that policies without people's participation remain just beautiful documents.",
-      link: "/her-story#government-service",
+      link: "/her-story#inspiration",
     },
     {
       year: "2015",
@@ -53,7 +52,7 @@ const VisualJourneyTimeline = () => {
       image: FoundingVyominiImg,
       quote:
         "That moment taught me that empowerment without economic freedom is incomplete.",
-      link: "/her-story#turning-point",
+      link: "/her-story#inspiration",
     },
     {
       year: "2017",
@@ -66,17 +65,17 @@ const VisualJourneyTimeline = () => {
       link: "/her-story#founding-vyomini",
     },
     {
-      year: "2018-2023",
+      year: "2018-2025",
       title: "National Impact & Scale",
       description:
         "Through Vyomini’s Menstrual Health Management program, she has educated 2.5 million+ women and created 10,000+ women entrepreneurs across India.",
       image: GlobalRecognitionImg,
       quote:
         "Every pad we make is not just about hygiene; it's about dignity and economic freedom.",
-      link: "/her-story#national-impact",
+      link: "/her-story#breaking-taboos",
     },
     {
-      year: "2024",
+      year: "2025",
       title: "National Recognition",
       description:
         "Prachi has been honoured with the Women Transforming India Award by NITI Aayog and recognized as a Social Entrepreneur of the Year.",
@@ -87,7 +86,6 @@ const VisualJourneyTimeline = () => {
     },
   ];
 
-  // IntersectionObserver to set active card based on center of viewport
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -112,37 +110,32 @@ const VisualJourneyTimeline = () => {
           setActiveIndex(closestIndex);
         }
       },
-      {
-        root: null,
-        threshold: 0.5,
-      }
+      { root: null, threshold: 0.5 }
     );
 
     const elements = document.querySelectorAll(".timeline-card");
     elements.forEach((el) => observer.observe(el));
-
     return () => observer.disconnect();
   }, []);
 
   return (
     <div className="bg-secondary" ref={containerRef}>
-      <section className="bg-white rounded-tr-[8rem] py-16 px-4 md:px-8 relative">
+      <section className="bg-white rounded-tr-[8rem] py-12 sm:py-16 px-4 md:px-8 relative">
         <div className="max-w-7xl mx-auto">
-          {/* Sticky Left Header */}
           <div className="flex flex-col lg:flex-row gap-12">
             {/* Left Column - Sticky Header */}
             <div className="lg:w-1/3">
               <div className="lg:sticky lg:top-24">
                 <div className="h-1 bg-primary rounded-full mb-6 w-16"></div>
-                <h2 className="satoshi-bold text-4xl md:text-5xl text-primary mb-6">
+                <h2 className="satoshi-bold text-3xl md:text-5xl text-primary mb-6">
                   The Journey
                 </h2>
-                <p className="satoshi-medium text-x l text-gray-700 mb-8">
+                <p className="satoshi-medium text-base md:text-lg text-gray-700 mb-8">
                   From humble beginnings to national recognition - a timeline of
                   resilience and transformation
                 </p>
 
-                {/* Progress Indicator */}
+                {/* Progress Indicator (Desktop) */}
                 <div className="hidden lg:block">
                   <div className="flex flex-col space-y-3 mb-8">
                     {milestones.map((milestone, index) => (
@@ -152,15 +145,18 @@ const VisualJourneyTimeline = () => {
                           const element = document.getElementById(
                             `milestone-${index}`
                           );
-                          element?.scrollIntoView({ behavior: "smooth", block: "center", inline: "center" });
+                          element?.scrollIntoView({
+                            behavior: "smooth",
+                            block: "center",
+                          });
                         }}
-                        className={`text-left satoshi-medium text-l transition-colors duration-300 p-2 rounded-lg ${
+                        className={`text-left satoshi-medium text-sm md:text-base transition-colors duration-300 p-2 rounded-lg ${
                           index === activeIndex
                             ? "bg-primary text-secondary"
-                            : "text-gray-600 hover:text-primary hover:bg-primary-10"
+                            : "text-gray-600 hover:text-primary hover:bg-primary/10"
                         }`}
                       >
-                        {milestone.year} - {milestone.title}
+                        {milestone.title}
                       </button>
                     ))}
                   </div>
@@ -171,7 +167,7 @@ const VisualJourneyTimeline = () => {
             {/* Right Column - Timeline */}
             <div className="lg:w-2/3">
               <div className="relative">
-                {/* Vertical Timeline Line */}
+                {/* Vertical Line (Desktop) */}
                 <div className="absolute left-5.5 top-0 bottom-0 w-1 bg-primary-40 hidden lg:block"></div>
 
                 {/* Timeline Items */}
@@ -186,7 +182,7 @@ const VisualJourneyTimeline = () => {
                     transition={{ duration: 0.7, delay: index * 0.1 }}
                     viewport={{ once: true, margin: "-100px" }}
                   >
-                    {/* Timeline Dot */}
+                    {/* Dot */}
                     <div className="absolute left-0 lg:left-6 transform -translate-x-1/2 z-10">
                       <div className="w-6 h-6 bg-primary rounded-full border-4 border-secondary flex items-center justify-center">
                         <div className="w-1.5 h-1.5 bg-secondary rounded-full"></div>
@@ -195,17 +191,12 @@ const VisualJourneyTimeline = () => {
 
                     {/* Card */}
                     <div className="bg-white rounded-xl shadow-2xl p-6">
-                      {/* Year */}
-                      <div className="satoshi-bold text-primary text-lg mb-2">
+                      <div className="satoshi-bold text-primary text-sm md:text-lg mb-2">
                         {milestone.year}
                       </div>
-
-                      {/* Title */}
-                      <h3 className="satoshi-bold text-2xl mb-3">
+                      <h3 className="satoshi-bold text-xl md:text-2xl mb-3">
                         {milestone.title}
                       </h3>
-
-                      {/* Image */}
                       <div className="aspect-[16/9] mb-4 rounded-lg overflow-hidden">
                         <img
                           src={milestone.image}
@@ -213,22 +204,17 @@ const VisualJourneyTimeline = () => {
                           className="w-full h-full object-cover"
                         />
                       </div>
-
-                      {/* Quote */}
                       {milestone.quote && (
-                        <blockquote className="satoshi-bold text-primary text-xl italic mb-3 pl-3 border-l-2 border-primary/30">
+                        <blockquote className="satoshi-bold text-primary text-lg md:text-xl italic mb-3 pl-3 border-l-2 border-primary/30">
                           "{milestone.quote}"
                         </blockquote>
                       )}
-
-                      {/* Description */}
-                      <p className="satoshi-regular text-gray-700 text-l mb-4 leading-relaxed">
+                      <p className="satoshi-regular text-gray-700 text-sm md:text-base mb-4 leading-relaxed">
                         {milestone.description}
                       </p>
-
                       <Link
                         to={milestone.link}
-                        className="inline-flex items-center satoshi-medium text-primary text-md hover:text-primary/80 transition-colors group"
+                        className="inline-flex items-center satoshi-medium text-primary text-sm md:text-base hover:text-primary/80 transition-colors group"
                       >
                         <span>Read more</span>
                         <svg
@@ -274,7 +260,7 @@ const VisualJourneyTimeline = () => {
               {/* Final CTA */}
               <div className="text-center mt-12">
                 <Link
-                  to="/her-story"
+                  to="/her-story#early-life"
                   className="inline-block bg-primary text-secondary satoshi-medium py-3 px-8 rounded-lg hover:bg-primary/90 transition-colors duration-300"
                 >
                   Explore Complete Journey

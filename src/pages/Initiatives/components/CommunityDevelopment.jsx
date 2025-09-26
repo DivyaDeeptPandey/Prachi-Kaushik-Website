@@ -8,7 +8,7 @@ const CommunityDevelopment = ({ sectionRef }) => {
     <section
       id="community-development"
       ref={sectionRef}
-      className="py-16 md:py-20 px-4 md:px-8 bg-secondary rounded-tr-[8rem] rounded-bl-[8rem]"
+      className="py-16 md:py-20 px-4 md:px-60 bg-secondary rounded-tr-[8rem] rounded-bl-[8rem]"
     >
       <div className="max-w-6xl mx-auto">
         <SectionHeader

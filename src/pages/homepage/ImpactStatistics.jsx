@@ -49,8 +49,8 @@ const ImpactStatistics = () => {
       description: "Through Vyomini's training programs"
     },
     {
-      value: 400,
-      label: "Health Camps Organized",
+      value: 50,
+      label: "Advocacy Events Organized",
       description: "Serving thousands of women and families"
     },
     {

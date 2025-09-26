@@ -13,11 +13,7 @@ const HeroSection = () => {
 
   // Function to handle "Contact" button click
   const handleContactClick = () => {
-    // Scroll to the "Join Her Campaign" section
-    const joinCampaignSection = document.getElementById('join-campaign');
-    if (joinCampaignSection) {
-      joinCampaignSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    navigate('/contact');
   };
 
   return (
@@ -71,7 +67,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut', delay: 0.5 }}
           >
-            Ms. Prachi Kaushik is a social entrepreneur dedicated to transforming women’s lives through menstrual health awareness, economic empowerment, and grassroots development. As the Founder of Vyomini social enterprise, she has educated over 3 million women and nurtured more than 10,000 women entrepreneurs.
+            Ms. Prachi Kaushik is a social entrepreneur dedicated to transforming women’s lives through menstrual health awareness, economic empowerment, and grassroots development. As the Founder and Director of Vyomini social enterprise, she has educated over 3 million women and nurtured more than 10,000 women entrepreneurs.
           </motion.p>
 
           <motion.div
