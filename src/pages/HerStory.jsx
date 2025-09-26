@@ -620,7 +620,7 @@ const HerStory = () => {
             </motion.div>
           </div>
 
-          {/* Impact Statistics within Community Impact Section */}
+          {/* Impact Statistics within Community Impact Section 
           <motion.div
             className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mt-8 md:mt-12"
             initial={{ opacity: 0, y: 20 }}
@@ -645,9 +645,9 @@ const HerStory = () => {
                 • Anganwadi worker training
               </p>
             </div>
-          </motion.div>
-        </div>
-      </section>
+          </motion.div> */}
+        </div> 
+      </section> 
 
       <JoinHerMovement />
       <Footer />
