@@ -112,7 +112,7 @@ const Contact = () => {
                   <div>
                     <h3 className="satoshi-medium text-lg mb-1">Email</h3>
                     <a href="mailto:karmayoginiprachi@gmail.com" className="satoshi-regular text-gray-700 hover:text-primary transition-colors">
-                      karmayoginiprachi@gmail.com
+                      contactprachikaushik@gmail.com
                     </a>
                   </div>
                 </div>
